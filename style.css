@@ -30,7 +30,6 @@ body {
     grid-template-columns: 4fr 1fr 2fr;
     grid-column-gap: 1px;
     background-color: cornflowerblue;
-
 }
 .header ul {
 
@@ -149,5 +148,4 @@ body {
     background-color: darkgreen;
     position: relative;
     z-index: 4;
-
 }
