@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+::selection {
+	color: crimson;
+}
+.collapse {
+	background-color: #000;
+}
+a {
+	text-decoration-line: none;
+	color: currentColor;
+}
+small {
+	color: #ccc;
+}
+.collapse .item {
+	position: relative;
+	padding: 1.25rem 1.875rem;
+	margin: 0;
+	display: block;
+	background-color: crimson;
+}
+.collapse .item::before {
+	content: "";
+	position: absolute;
+	top: 1.9rem;
+	left: 0;
+	width: 0.6rem;
+	height: 0.6rem;
+	border: 0.15rem solid aquamarine;
+	border-radius: 50%;
+	background: crimson;
+}
+.collapse .item.header {
+	color: #fff;
+}
+.collapse .item.header::after {
+	border-left: 0.2rem dashed crimson;
+}
+.collapse .item:not(:last-child):not(.title)::after {
+	position： absolute;
+	top: 1.9rem;
+	bottom: -1.9rem;
+	left: 0.35rem;
+	border-left: 0.2rem solid crimson;
+}
