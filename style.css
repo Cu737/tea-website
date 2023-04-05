@@ -156,6 +156,7 @@ body {
     width: 300px;
     background-color: #704564;
     position: sticky;
+    top :200px;
 
 
 }
@@ -193,11 +194,9 @@ body {
 .main{
     width: 100%;
     height: 3000px;
-    background-color: crimson;
 }
 
 .content{
-    background-color: darkgreen;
     position: relative;
     z-index: 4;
 }
