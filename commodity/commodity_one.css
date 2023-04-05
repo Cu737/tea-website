@@ -1,0 +1,63 @@
+.dis{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.commodity{
+
+    width: 304px;
+    height: 450px;
+    margin: 50px 60px 20px 60px;
+    box-shadow: 5px 5px 20px 5px rgba(52,78,65,0.5);
+    text-decoration: none;
+
+}
+
+.dis :hover{
+    box-shadow: 5px 5px 20px 5px rgba(52,78,65,0.8);
+}
+
+.commodity :hover
+{
+    box-shadow: none;
+}
+
+.commodity_end {
+    margin-left: 6px;
+}
+
+.commodity img {
+    width: 304px;
+    height: 280px;
+}
+
+.commodity_title{
+    padding-left: 12px;
+    padding-top: 8px;
+    line-height: 32px;
+    font-family: 华文楷体;
+    font-size: 30px;
+    color: #588157;
+}
+
+.commodity_cost{
+    padding-left: 12px;
+    padding-top: 8px;
+    line-height: 22px;
+    font-size: 20px;
+    font-family: 华文仿宋;
+    font-weight: 700;
+    color: #344e41;
+}
+
+.commodity_describe{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    line-height: 18px;
+    font-size: 16px;
+    font-family: 华文仿宋;
+    font-weight: 400;
+    color: #7c7c77;
+}
