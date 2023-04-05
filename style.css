@@ -21,16 +21,15 @@ body {
 
 }
 .header {
-    margin-top: 20px;
     height: auto;
-    width: auto;
-    background-color: aquamarine;
-    position: sticky;
-    top: 0px;
+    width: 100%;
+    position: fixed;
+    top :0px;
     z-index: 5;
     display: grid;
     grid-template-columns: 4fr 1fr 2fr;
     grid-column-gap: 1px;
+    background-color: cornflowerblue;
 
 }
 .header ul {
@@ -148,4 +147,7 @@ body {
 
 .content{
     background-color: darkgreen;
+    position: relative;
+    z-index: 4;
+
 }

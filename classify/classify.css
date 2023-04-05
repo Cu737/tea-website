@@ -3,7 +3,7 @@
 	padding: 0;
 }
 ::selection {
-	color: crimson;
+	color: #4d1621;
 }
 .collapse {
 	background-color: #000;
@@ -18,9 +18,10 @@ small {
 .collapse .item {
 	position: relative;
 	padding: 1.25rem 1.875rem;
+	box-sizing: border-box;
 	margin: 0;
 	display: block;
-	background-color: crimson;
+	background-color: #4d1621;
 }
 .collapse .item::before {
 	content: "";
@@ -31,13 +32,13 @@ small {
 	height: 0.6rem;
 	border: 0.15rem solid aquamarine;
 	border-radius: 50%;
-	background: crimson;
+	background: #4d1621;
 }
 .collapse .item.header {
 	color: #fff;
 }
 .collapse .item.header::after {
-	border-left: 0.2rem dashed crimson;
+	border-left: 0.2rem dashed #4d1621;
 }
 .collapse .item:not(:last-child):not(.title)::after {
 	position: absolute;
