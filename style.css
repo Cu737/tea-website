@@ -26,6 +26,7 @@ body {
     width: auto;
     background-color: aquamarine;
     position: sticky;
+    top: 0px;
     z-index: 5;
     display: grid;
     grid-template-columns: 4fr 1fr 2fr;
@@ -83,7 +84,7 @@ body {
     margin-bottom: 10px;
     padding-left: 60px;
     text-align: right;
-    ·font-family: 'icomoon';
+    font-family: 'icomoon';
     font-size: 20px;
 
 }

@@ -40,7 +40,7 @@ small {
 	border-left: 0.2rem dashed crimson;
 }
 .collapse .item:not(:last-child):not(.title)::after {
-	position： absolute;
+	position: absolute;
 	top: 1.9rem;
 	bottom: -1.9rem;
 	left: 0.35rem;
