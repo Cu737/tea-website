@@ -57,14 +57,18 @@ body {
         opacity: 1
     }
 }
-
+.slideshow-container top_bottom{
+    position: relative;
+    bottom:10px;
+    z-index: 5;
+}
 .tea_kind {
     float: right;
     width: 100%;
     height: auto;
     margin-top: 0px;
     margin-right: 0px;
-    background-color: #cad2c5;
+    background-color: white;
 }
 
 h1 {
@@ -150,7 +154,7 @@ h1 {
     height: auto;
     margin-top: 20px;
     margin-left: 10px;
-    background-color: #cad2c5;
+    background-color: white;
 }
 
 .tea_history li {
