@@ -17,7 +17,7 @@ small {
 	padding: 1.25rem 1.875rem;
 	margin: 0;
 	display: block;
-	background-color: tranparent;
+	background-color: transparent;
 }
 .collapse .item::before {
 	content: "";
