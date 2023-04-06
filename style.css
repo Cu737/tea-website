@@ -1,124 +1,97 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?ehjytq');
-    src: url('fonts/icomoon.eot?ehjytq#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?ehjytq') format('truetype'),
-        url('fonts/icomoon.woff?ehjytq') format('woff'),
-        url('fonts/icomoon.svg?ehjytq#icomoon') format('svg');
+    src: url('fonts/icomoon.eot?8kzka9');
+    src: url('fonts/icomoon.eot?8kzka9#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?8kzka9') format('truetype'),
+        url('fonts/icomoon.woff?8kzka9') format('woff'),
+        url('fonts/icomoon.svg?8kzka9#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
 }
-
+@font-face {
+    font-family: title_font;
+    src: url("fonts/NanFengXingShu-2.ttf");
+}
 * {
     margin: 0;
     padding: 0;
 }
-.mySlides {
-    display: none;
-    width:100%;
-    height: 600px;
-}
 
-/* 幻灯片容器 */
-.slideshow-container {
-    max-width: 100%;
-    height: 600px;
-    position: relative;
-    margin-bottom: 0px;
-    overflow: hidden;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* 淡出动画 */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
 body {
-    width:100%;
-    height:5000px;
-
+    width: 100%;
+    height: 5000px;
+}
+.toptitle{
+    font-family: "title_font";
+    width:0x;
+    height:0px;
+    font-size: 100px;
+    color:white;
+    position: relative;
+    top:130px;
+    left:260px;
+    z-index: 5;
+}
+.first_p{
+    position: relative;
+    top:0px;
+    left:40px;
+}
+.second_p{
+    position: relative;
+    top:0px;
+    left:200px;
 }
 .header {
+    font-family: "title_font";
     height: auto;
-    width: 100%;
+    width: 40%;
+    background-color: transparent;
     position: fixed;
-    top :0px;
+    top: 0px;
     z-index: 5;
     display: grid;
     grid-template-columns: 4fr 1fr 2fr;
     grid-column-gap: 1px;
-    background-color: cornflowerblue;
 }
-.header ul {
 
+.header ul {
     display: flex;
-    background-color: chocolate;
+    background-color: transparent;
 }
+
 .header li {
-    display: inline-block;
-    width: 20%;
-    background-color: white;
+    float : right;
+    width: 15%;
+    height: 30px;
+    background-color: transparent;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     line-height: 30px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px;  */
     padding-left: 20px;
     padding-right: 20px;
-
 }
-
 .header li a {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .header li:first-child {
-    margin-left: 100px;
+    margin-left: 249px;
 }
-
 .header li:hover {
-    background-color: beige;
+    background-color:darkseagreen;
 }
-
 .header input {
     height: 30px;
     width: 249px;
@@ -132,19 +105,20 @@ body {
 .header span {
     margin-top: 22px;
     margin-bottom: 10px;
-    padding-left: 60px;
+    padding-left: 0px;
     text-align: right;
     font-family: 'icomoon';
     font-size: 20px;
-
+    color: white;
 }
-.flex{
+
+.flex {
     display: flex;
     width: 100%;
     height: 3000px;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 300px 800px;
     flex-basis: 1100px;
@@ -154,50 +128,47 @@ body {
 .introduce {
     height: 700px;
     width: 300px;
-    background-color: #704564;
+    background-color:aliceblue;
     position: sticky;
-
-
+    top:200px;
 }
-.introduce p{
+
+.introduce p {
     text-align: center;
 }
-.edddd{
-    height:500px;
-    width:800px;
-}
-.left_white{
+
+.left_white {
 
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: white;
     flex-grow: 0.2;
 
 }
-.right_white{
+
+.right_white {
 
     width: 100%;
-    height:100%;
-    background-color: aqua;
+    height: 100%;
+    background-color: white;
     flex-grow: 0.2;
 }
-.endless{
+
+.endless {
 
     width: 100%;
     height: auto;
     margin-top: 20px;
-    background-color: #ff8800;
+    background-color: transparent;
     text-align: center;
 }
 
-.main{
+.main {
     width: 100%;
     height: 3000px;
-    background-color: crimson;
+    background-color: #cad2c5;
 }
 
-.content{
-    background-color: darkgreen;
-    position: relative;
-    z-index: 4;
+.content {
+    background-color: white;
 }
