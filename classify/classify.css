@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .collapse{
-	background-color: crimson;
+	background-color: transparent;
 }
 a {
 	text-decoration-line: none;
@@ -29,7 +29,7 @@ small {
 	height: 0.6rem;
 	border: 0.15rem solid aquamarine;
 	border-radius: 50%;
-	background: crimson;
+	background: transparent;
 }
 .collapse .item.header {
 	color: #000;
