@@ -27,7 +27,7 @@ body {
     width:0x;
     height:0px;
     font-size: 100px;
-    color:white;
+    color:#fefae0;
     position: relative;
     top:130px;
     left:260px;
@@ -90,7 +90,9 @@ body {
     margin-left: 249px;
 }
 .header li:hover {
-    background-color:darkseagreen;
+    /* background-color:darkseagreen; */
+    border:5px solid transparent;
+    /* box-shadow: 2px 2px 2px #84a98c; */
 }
 .header input {
     height: 30px;
@@ -99,12 +101,16 @@ body {
     border-radius: 5px;
     margin-top: 17px;
     margin-bottom: 22px;
-    margin-left: 20px;
+    margin-right: 20px;
+    border:none;
 }
-
+.header input:focus{
+    outline:none;
+}
 .header span {
     margin-top: 22px;
     margin-bottom: 10px;
+    margin-right: 10px;
     padding-left: 0px;
     text-align: right;
     font-family: 'icomoon';
