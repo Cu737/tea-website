@@ -12,6 +12,5 @@ function showSlides() {
     if (slideIndex > slides.length) { slideIndex = 1 }
     
     slides[slideIndex - 1].style.display = "block";
-    // dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 3000); // 切换时间为 2 秒
 }
