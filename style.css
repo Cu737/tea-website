@@ -9,10 +9,12 @@
     font-style: normal;
     font-display: block;
 }
+
 @font-face {
     font-family: title_font;
     src: url("fonts/NanFengXingShu-2.ttf");
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -22,27 +24,31 @@ body {
     width: 100%;
     height: auto;
 }
-.toptitle{
-    font-family: "title_font";
 
-    height:0px;
+.toptitle {
+    font-family: "title_font";
+    height: 0px;
     font-size: 100px;
-    color:#fefae0;
+    color: #fefae0;
     position: relative;
-    top:130px;
-    left:260px;
+    top: 130px;
+    left: 260px;
     z-index: 5;
 }
-.first_p{
+
+
+.first_p {
     position: relative;
-    top:0px;
-    left:40px;
+    top: 0px;
+    left: 40px;
 }
-.second_p{
+
+.second_p {
     position: relative;
-    top:0px;
-    left:200px;
+    top: 0px;
+    left: 200px;
 }
+
 .header {
     font-family: "title_font";
     height: auto;
@@ -62,7 +68,7 @@ body {
 }
 
 .header li {
-    float : right;
+    float: right;
     width: 15%;
     height: 30px;
     background-color: transparent;
@@ -78,22 +84,25 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .header li a {
     display: inline-block;
     width: 80px;
     height: 20px;
     text-decoration: none;
-    color: white;
+    color: #fefae0;
 }
 
 .header li:first-child {
     margin-left: 249px;
 }
+
 .header li:hover {
     /* background-color:darkseagreen; */
-    border:5px solid transparent;
+    border: 5px solid transparent;
     /* box-shadow: 2px 2px 2px #84a98c; */
 }
+
 .header input {
     height: 30px;
     width: 249px;
@@ -102,11 +111,13 @@ body {
     margin-top: 17px;
     margin-bottom: 22px;
     margin-right: 20px;
-    border:none;
+    border: none;
 }
-.header input:focus{
-    outline:none;
+
+.header input:focus {
+    outline: none;
 }
+
 .header span {
     margin-top: 22px;
     margin-bottom: 10px;
@@ -138,7 +149,8 @@ body {
     top :140px;
 
 }
-.introduce img{
+
+.introduce img {
     height: 240px;
     width: 180px;
     margin: 30px 60px 20px 60px;
@@ -146,14 +158,16 @@ body {
     border-style: solid;
     border-color: #354f52;
 }
-.introduce p{
+
+.introduce p {
     margin: 10px 28px 20px 32px;
     font-size: 20px;
     font-family: 华文楷体;
     color: #354f52;
     line-height: 22px;
 }
-.introduce a{
+
+.introduce a {
     display: grid;
     height: 50px;
     width: 240px;
@@ -163,11 +177,13 @@ body {
     border-radius: 20px / 20px;
     text-decoration: none;
 }
-.introduce a span{
+
+.introduce a span {
     width: 70px;
     height: 50px;
 }
-.introduce a span img{
+
+.introduce a span img {
     width: 30px;
     height: 30px;
     margin: 10px 20px 10px 20px;
@@ -176,7 +192,7 @@ body {
     background-color: #fefae0;
 }
 
-.introduce a p{
+.introduce a p {
     margin: 10px 0 10px 0;
     font-family: 华文仿宋;
     font-size: 22px;
@@ -184,11 +200,12 @@ body {
     color: #fefae0;
 }
 
-.edddd{
-    height:500px;
-    width:800px;
+.edddd {
+    height: 500px;
+    width: 800px;
 }
-.left_white{
+
+.left_white {
 
     width: 181.2px;
     height: 100%;
@@ -241,7 +258,7 @@ body {
     height: auto;
 }
 
-.content{
+.content {
     position: relative;
     z-index: 4;
 }
