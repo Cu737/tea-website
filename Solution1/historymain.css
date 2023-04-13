@@ -1,0 +1,49 @@
+﻿.main {
+    width: 800px;
+    margin-right: 30px;
+    background-color:white;
+}
+.logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 130%;
+    padding: 20px 130px;
+    margin: 0 auto;
+}
+.content nav ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 22px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-indent: 20px;
+    list-style: none;
+}
+.content a:link {
+    text-decoration: none;
+    color: #3a5a40;
+    background-color:#e9edc9 ;
+}
+
+.content a:visited {
+    text-decoration: none;
+    color: darkslategray;
+    background-color: #a3b18a;
+}
+
+.content a:hover {
+    text-decoration: underline;
+    color: #344e41;
+    font-size: 1.2em;
+    background-color: #a3b18a;
+}
+
+.content a:active {
+    color: #283618;
+    font-size: 1.2em;
+    background-color: #606c38;
+}
+.content nav ul li a[href^="stage"] {
+    line-height: 90px;
+    border: 2px solid #081c15;
+    padding: 20px;
+    border-radius: 25px;
+}
