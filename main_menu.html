@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main_menu.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="top.js" defer="defer"></script>
 </head>
 
@@ -15,21 +16,21 @@
     <div class="slideshow-container">
         <div class="mySlides fade">
             <div class="toptitle">
-                <p  class="first_p">一帘春欲暮</p>
+                <p class="first_p">一帘春欲暮</p>
                 <p class="second_p">茶烟细杨落花风</p>
             </div>
             <img decoding="async" src="image/tea1.jpg" style="width:100%" style="height: 100%;">
         </div>
         <div class="mySlides fade">
             <div class="toptitle">
-                <p  class="first_p">青箬小壶冰共裹</p>
+                <p class="first_p">青箬小壶冰共裹</p>
                 <p class="second_p">寒灯新茗月同煎</p>
             </div>
             <img decoding="async" src="image/tea5.jpg" style="width:100%" style="height: 100%;">
         </div>
         <div class="mySlides fade">
             <div class="toptitle">
-                <p  class="first_p">当年曾胜赏</p>
+                <p class="first_p">当年曾胜赏</p>
                 <p class="second_p">生香熏袖，活火分茶</p>
             </div>
             <img decoding="async" src="image/tea7.jpg" style="width:100%" style="height: 100%;">
@@ -49,8 +50,53 @@
         <span></span>
         <input type="search">
     </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+                </path>
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0"></use>
+                <use xlink:href="#gentle-wave" x="48" y="3"></use>
+                <use xlink:href="#gentle-wave" x="48" y="5"></use>
+                <use xlink:href="#gentle-wave" x="48" y="7"></use>
+            </g>
+        </svg>
+    </div>
+    <div class="top_water">
+        <li>
+            <div class="water">
+
+            </div>
+        </li>
+        <li>
+            <div class="water">
+
+            </div>
+        </li>
+        <li>
+            <div class="water">
+
+            </div>
+        </li>
+        <li>
+            <div class="water">
+
+            </div>
+        </li>
+        <li>
+            <div class="water">
+
+            </div>
+        </li>
+    </div>
     <div class="flex">
         <div class="left_white">
+            <div class="water">
+
+            </div>
         </div>
         <div class="grid">
             <div class="introduce">
@@ -208,10 +254,13 @@
                     </ul>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="right_white">
+            <div class="water">
+
+            </div>
         </div>
     </div>
 
