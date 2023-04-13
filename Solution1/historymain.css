@@ -9,7 +9,7 @@
     padding: 20px 130px;
     margin: 0 auto;
 }
-nav ul {
+.content nav ul {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 22px;
     letter-spacing: 1px;
@@ -41,7 +41,7 @@ nav ul {
     font-size: 1.2em;
     background-color: #606c38;
 }
-nav ul li a[href^="stage"] {
+.content nav ul li a[href^="stage"] {
     line-height: 90px;
     border: 2px solid #081c15;
     padding: 20px;

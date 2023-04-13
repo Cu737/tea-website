@@ -9,12 +9,10 @@
     font-style: normal;
     font-display: block;
 }
-
 @font-face {
     font-family: title_font;
     src: url("fonts/NanFengXingShu-2.ttf");
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -22,33 +20,29 @@
 
 body {
     width: 100%;
-    height: auto;
+    height: 5000px;
 }
-
-.toptitle {
+.toptitle{
     font-family: "title_font";
-    height: 0px;
+    width:0x;
+    height:0px;
     font-size: 100px;
-    color: #fefae0;
+    color:white;
     position: relative;
-    top: 130px;
-    left: 260px;
+    top:130px;
+    left:260px;
     z-index: 5;
 }
-
-
-.first_p {
+.first_p{
     position: relative;
-    top: 0px;
-    left: 40px;
+    top:0px;
+    left:40px;
 }
-
-.second_p {
+.second_p{
     position: relative;
-    top: 0px;
-    left: 200px;
+    top:0px;
+    left:200px;
 }
-
 .header {
     font-family: "title_font";
     height: auto;
@@ -68,7 +62,7 @@ body {
 }
 
 .header li {
-    float: right;
+    float : right;
     width: 15%;
     height: 30px;
     background-color: transparent;
@@ -84,25 +78,20 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
-
 .header li a {
     display: inline-block;
     width: 80px;
     height: 20px;
     text-decoration: none;
-    color: #fefae0;
+    color: white;
 }
 
 .header li:first-child {
     margin-left: 249px;
 }
-
 .header li:hover {
-    /* background-color:darkseagreen; */
-    border: 5px solid transparent;
-    /* box-shadow: 2px 2px 2px #84a98c; */
+    background-color:darkseagreen;
 }
-
 .header input {
     height: 30px;
     width: 249px;
@@ -110,18 +99,12 @@ body {
     border-radius: 5px;
     margin-top: 17px;
     margin-bottom: 22px;
-    margin-right: 20px;
-    border: none;
-}
-
-.header input:focus {
-    outline: none;
+    margin-left: 20px;
 }
 
 .header span {
     margin-top: 22px;
     margin-bottom: 10px;
-    margin-right: 10px;
     padding-left: 0px;
     text-align: right;
     font-family: 'icomoon';
@@ -132,7 +115,7 @@ body {
 .flex {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 3000px;
 }
 
 .grid {
@@ -143,79 +126,29 @@ body {
 }
 
 .introduce {
-    height: 520px;
+    height: 700px;
     width: 300px;
+    background-color:aliceblue;
     position: sticky;
-    top :140px;
-
-}
-
-.introduce img {
-    height: 240px;
-    width: 180px;
-    margin: 30px 60px 20px 60px;
-    border-radius: 90px / 120px;
-    border-style: solid;
-    border-color: #354f52;
+    top:200px;
 }
 
 .introduce p {
-    margin: 10px 28px 20px 32px;
-    font-size: 20px;
-    font-family: 华文楷体;
-    color: #354f52;
-    line-height: 22px;
-}
-
-.introduce a {
-    display: grid;
-    height: 50px;
-    width: 240px;
-    margin: 0 30px 0 30px;
-    grid-template-columns: 1fr 4fr;
-    background-color: #354f52;
-    border-radius: 20px / 20px;
-    text-decoration: none;
-}
-
-.introduce a span {
-    width: 70px;
-    height: 50px;
-}
-
-.introduce a span img {
-    width: 30px;
-    height: 30px;
-    margin: 10px 20px 10px 20px;
-    border-radius: 15px / 15px;
-    border-style: none;
-    background-color: #fefae0;
-}
-
-.introduce a p {
-    margin: 10px 0 10px 0;
-    font-family: 华文仿宋;
-    font-size: 22px;
-    line-height: 30px;
-    color: #fefae0;
-}
-
-.edddd {
-    height: 500px;
-    width: 800px;
+    text-align: center;
 }
 
 .left_white {
 
-    width: 181.2px;
+    width: 100%;
     height: 100%;
+    background-color: white;
     flex-grow: 0.2;
 
 }
 
 .right_white {
 
-    width: 181.2px;
+    width: 100%;
     height: 100%;
     background-color: white;
     flex-grow: 0.2;
@@ -226,39 +159,16 @@ body {
     width: 100%;
     height: auto;
     margin-top: 20px;
-    background-color: #354f52;
+    background-color: transparent;
     text-align: center;
 }
 
-.endless ul{
-    text-align: left;
-    list-style: none;
-    padding: 30px 20px 30px 30px;
-    font-family: "title_font";
-    font-size: 20px;
-    line-height: 22px;
-    color: #fefae0;
-
-}
-
-.endless ul li{
-    text-indent: -20px;
-    text-align: left;
-    list-style: none;
-    padding: 5px 20px 5px 20px;
-    font-family: "title_font";
-    font-size: 16px;
-    line-height: 18px;
-    color: #fefae0;
-}
-
-
 .main {
     width: 100%;
-    height: auto;
+    height: 3000px;
+    background-color: #cad2c5;
 }
 
 .content {
-    position: relative;
-    z-index: 4;
+    background-color: white;
 }
