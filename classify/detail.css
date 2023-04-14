@@ -1,0 +1,65 @@
+﻿.content nav {
+    background-color: #3a5a40;
+    padding: .5em;
+    top: 50px;
+    border-radius: 25px;
+    font-family: "title_font";
+}
+
+.content nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    line-height: 22px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-indent: 20px;
+    border-radius: 25px;
+}
+.content nav ul li {
+    display: inline-block;
+    width: 20%;
+    border-radius: 25px;
+}
+.content nav a {
+    display: block;
+    color: #e9edc9;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+.main {
+    width: 800px;
+    margin-right: 30px;
+    background-color: white;
+    padding: 0px,30px;
+}
+.content img {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 25px;
+    border: 2px solid #354f52;
+}
+.content article h1 {
+    text-align: center;
+    margin: 20px 0px;
+}
+.content article p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    text-indent: 2em;
+    margin: 10px auto;
+    line-height: 30px;
+    font-family: "title_font";
+}
+.content {
+    text-align: center;
+}
+
+    .content article {
+        padding: 5px,200px;
+        margin: 0px 30px;
+        font-family: 华文楷体;
+    }
