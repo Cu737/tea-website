@@ -12,6 +12,7 @@
     box-shadow: 5px 5px 20px 5px rgba(52,78,65,0.5);
     text-decoration: none;
 
+
 }
 
 .dis :hover{
@@ -27,7 +28,12 @@
     margin-left: 6px;
 }
 
-.commodity img {
+a {
+    width: 304px;
+    overflow: hidden;
+}
+
+.commodity a img {
     width: 304px;
     height: 280px;
 }
