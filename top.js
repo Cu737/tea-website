@@ -1,6 +1,5 @@
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -14,3 +13,15 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000); // 切换时间为 2 秒
 }
+function scroll() {
+    var top = $("body").offset().top;//获取导航栏变色的位置距顶部的高度
+    var scrollTop = $(window).scrollTop();//获取当前窗口距顶部的高度
+    if (scrollTop <= top+500) {
+        $('.header').css('background-color', 'transparent');
+    } else {
+        $('.header').css('background-color', '#cad2c5');
+    }
+}
+$(window).on('scroll', function() {
+    scroll()
+});
