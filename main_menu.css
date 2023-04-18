@@ -57,16 +57,6 @@ body {
         opacity: 1
     }
 }
-/* .slideshow-container .top_bottom{
-    position: fixed;
-    top:100px;
-    width:100%;
-    float:left;
-    z-index: 5;
-    background-repeat:repeat-x;
-} */
-/* .slideshow-container .top_bottom img{
-} */
 .tea_kind {
     float: right;
     width: 100%;
