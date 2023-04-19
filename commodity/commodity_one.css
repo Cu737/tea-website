@@ -30,7 +30,7 @@
 
 a {
     width: 304px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .commodity a img {

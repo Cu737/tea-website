@@ -6,7 +6,7 @@ body {
     font-family: "title_font";
 }
 
-.mySlides {
+/* .mySlides {
     display: none;
     width:100%;
     height: 600px;
@@ -31,7 +31,7 @@ body {
 }
 
 /* 淡出动画 */
-.fade {
+/* .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2s;
     animation-name: fade;
@@ -56,7 +56,7 @@ body {
     to {
         opacity: 1
     }
-}
+} */ 
 .tea_kind {
     float: right;
     width: 100%;
