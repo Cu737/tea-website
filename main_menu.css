@@ -6,7 +6,7 @@ body {
     font-family: "title_font";
 }
 
-.mySlides {
+/* .mySlides {
     display: none;
     width:100%;
     height: 600px;
@@ -31,7 +31,7 @@ body {
 }
 
 /* 淡出动画 */
-.fade {
+/* .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2s;
     animation-name: fade;
@@ -56,17 +56,7 @@ body {
     to {
         opacity: 1
     }
-}
-/* .slideshow-container .top_bottom{
-    position: fixed;
-    top:100px;
-    width:100%;
-    float:left;
-    z-index: 5;
-    background-repeat:repeat-x;
-} */
-/* .slideshow-container .top_bottom img{
-} */
+} */ 
 .tea_kind {
     float: right;
     width: 100%;
@@ -117,7 +107,7 @@ h1 {
 .tea_kind li:nth-child(even) {
     margin-right: 80px;
 }
-img{
+img {
     border-radius: 8px;
 }
 .tea_kind li:last-child {
@@ -168,7 +158,7 @@ img{
 .tea_history li {
     float: right;
     width: 90%;
-    height: 210px;
+    height: 230px;
     background-color:#cad2c5;
     list-style: none;
     margin-top: 30px;
@@ -183,13 +173,14 @@ img{
 .tea_history li:last-child:hover{
     box-shadow:0,0,0;
 }
-.tea_history li img {
-    height: 175px;
-    width: 300px;
-    float: left;
-    margin-left:30px;
-    margin-top: 20px;
-}
+    .tea_history li img {
+        height: 175px;
+        width: 300px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 20px;
+        border: 2px solid #354f52;
+    }
 
 .tea_history li span {
     float: right;
@@ -201,18 +192,23 @@ img{
 
 .tea_history li span h3 {
     text-align: center;
+    margin-bottom:10px;
 }
 
-.tea_history li:last-child {
-    width: 100%;
-    height: 30px;
-    background-color: transparent;
-    list-style: none;
-    margin-right: 0px;
-    margin-top: 30px;
-    border-radius: 8px;
-    text-align: center;
-}
+    .tea_history li span p {
+        text-indent: 2em;
+    }
+
+    .tea_history li:last-child {
+        width: 100%;
+        height: 30px;
+        background-color: transparent;
+        list-style: none;
+        margin-right: 0px;
+        margin-top: 30px;
+        border-radius: 8px;
+        text-align: center;
+    }
 
 .tea_history li a {
     margin-left: 10px;

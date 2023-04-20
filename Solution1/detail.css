@@ -4,6 +4,7 @@
     top: 50px;
     border-radius: 25px;
     font-family: "title_font";
+    font-size: 18px;
 }
 
 .content nav ul {
@@ -61,4 +62,5 @@
         padding: 5px,200px;
         margin: 0px 30px;
         font-family: 华文楷体;
+        font-size:18px;
     }
