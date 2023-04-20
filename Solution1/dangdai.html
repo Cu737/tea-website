@@ -7,25 +7,56 @@
     <meta name="viewport" content="width=!, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="detail.css">
-
-    <script src="top.js" defer="defer"></script>
+    <script src="../top.js" defer="defer"></script>
 </head>
 
 <body>
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <!-- <div class="numbertext">1 / 3</div> -->
-            <img decoding="async" src="../image/tea.jpg" style="width:100%" style="height: 100%;">
+            <div class="toptitle">
+                <p class="first_p">一帘春欲暮</p>
+                <p class="second_p">茶烟细杨落花风</p>
+            </div>
+            <img decoding="async" src="../image/tea1.jpg" style="width:100%" style="height: 100%;">
         </div>
+        <div class="mySlides fade">
+            <div class="toptitle">
+                <p class="first_p">青箬小壶冰共裹</p>
+                <p class="second_p">寒灯新茗月同煎</p>
+            </div>
+            <img decoding="async" src="../image/tea5.jpg" style="width:100%" style="height: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <div class="toptitle">
+                <p class="first_p">当年曾胜赏</p>
+                <p class="second_p">生香熏袖，活火分茶</p>
+            </div>
+            <img decoding="async" src="../image/tea7.jpg" style="width:100%" style="height: 100%;">
+        </div>
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
     </div>
     <div class="header">
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">茶道历史</a></li>
-            <li><a href="#">茶道器具</a></li>
-            <li><a href="#">茶道文化</a></li>
-            <li><a href="#">购茶途径</a></li>
+            <li><a href="#"><strong>首页</strong></a></li>
+            <li><a href="#"><strong>茶道历史</strong></a></li>
+            <li><a href="#"><strong>茶道器具</strong></a></li>
+            <li><a href="#"><strong>茶道文化</strong></a></li>
+            <li><a href="#"><strong>购茶途径</strong></a></li>
         </ul>
         <span></span>
         <input type="search">
@@ -120,7 +151,7 @@
                             它是从茶树风格、茶叶品性引申过来。以茶喻人，以茶树为榜样的茶人，就是指具有这种博大胸怀、无私奉献精神的人。
                             范增平先生将茶人的精神归纳为四点: 一是理性的思考，作为一个茶人凡事能做理性的思考，有所为、有所不为;
                             二是沉着的修养，有沉着的修养，坚守“富贵不能淫、贫贱不能移，威武不能屈”的大无畏精神;
-                            三是坚毅的信仰，能择善固执，不畏讥怕谗，明是非、辨善恶，众善奉行，诸恶莫作; 
+                            三是坚毅的信仰，能择善固执，不畏讥怕谗，明是非、辨善恶，众善奉行，诸恶莫作;
                             四是正义的行为，为追求真理，只问是非、善恶，不计利害得失，只要是合乎社会正义，符合大众公平的道理，就是赴汤蹈火，也在所不惜。
                             这就是茶人的精神，这种精神对处于世界观、人生观和价值观经常迷茫的当代人无疑有着特别重要的意义。
                             当前，在我国全面建设小康社会，各项改革深入推进时期，一些消极的价值观念难免会通过各种渠道对当代人的思想产生冲击和影响，使当代人自身状况发生显著变化。
@@ -130,7 +161,8 @@
                         </p>
                         <p>
                             茶文化根植于华夏文化，其体系中渗透了古代哲学、美学、伦理学、文学及文化艺术等理论，并融汇了儒、道、佛各家的思想和传统文化的精髓。学习茶文化可以增长知识，提高当代人的文化修养和审美能力。
-                            内容丰富的各式茶艺、茶道都容纳了礼仪、道德、科学与艺术的内容，欣赏茶歌、茶舞和茶音乐，可提高欣赏美和创造美的能力; 茶与一定的历史文化相融合，涉及到生活的方方面面，上至社会的规章、制度与法令，
+                            内容丰富的各式茶艺、茶道都容纳了礼仪、道德、科学与艺术的内容，欣赏茶歌、茶舞和茶音乐，可提高欣赏美和创造美的能力;
+                            茶与一定的历史文化相融合，涉及到生活的方方面面，上至社会的规章、制度与法令，
                             下至各种的风俗、风气与习惯，以及以茶为内容所产生的各种茶诗、茶楹联和茶画都能拓宽大学生的视野，增加我们的人文知识。
                         </p>
                     </article>
