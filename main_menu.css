@@ -222,7 +222,7 @@ img {
     color: black;
 }
 
-.tea_history li a:hover {
+.tea_history li:last-child a:hover {
     color: darkgray;
 }
 
