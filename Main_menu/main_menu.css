@@ -234,10 +234,10 @@ img {
 }
 
 .tea_buy li {
-    height: 230px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     margin-top: 30px;
-    margin-right: 130px;
+    margin-right: 60px;
     float: right;
     list-style: none;
     background-color: transparent;
@@ -252,7 +252,7 @@ img {
     box-shadow: none;
 }
 .tea_buy li img {
-    height: 150px;
+    height: 200px;
     width: 100%;
 }
 
@@ -262,11 +262,11 @@ img {
     background-color: transparent;
 }
 
-.tea_buy li a:hover {
+/* .tea_buy li a:hover {
     color: darkgray;
     opacity: 0.8;
     background-color: transparent;
-}
+} */
 
 .tea_buy li:last-child {
     width: 800px;
@@ -287,4 +287,10 @@ img {
 .tea_buy li:last-child a:hover {
     color: darkgray;
     box-shadow:none;
+}
+.tea_buy li p{
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 18px;
 }
