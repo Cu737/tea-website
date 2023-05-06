@@ -10,133 +10,122 @@
   <link rel="stylesheet" href="commodity_one.css">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="../top.js" defer="defer"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="toptitle">
-        <p class="first_p">一帘春欲暮</p>
-        <p class="second_p">茶烟细杨落花风</p>
-      </div>
-      <img decoding="async" src="../image/tea1.jpg" style="width:100%" style="height: 100%;">
-    </div>
-    <div class="mySlides fade">
-      <div class="toptitle">
-        <p class="first_p">青箬小壶冰共裹</p>
-        <p class="second_p">寒灯新茗月同煎</p>
-      </div>
-      <img decoding="async" src="../image/tea5.jpg" style="width:100%" style="height: 100%;">
-    </div>
-    <div class="mySlides fade">
-      <div class="toptitle">
-        <p class="first_p">当年曾胜赏</p>
-        <p class="second_p">生香熏袖，活火分茶</p>
-      </div>
-      <img decoding="async" src="../image/tea7.jpg" style="width:100%" style="height: 100%;">
-    </div>
-  </div>
-  <div id="waves">
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-      </defs>
-      <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" />
-        <use xlink:href="#gentle-wave" x="48" y="3" />
-        <use xlink:href="#gentle-wave" x="48" y="5" />
-        <use xlink:href="#gentle-wave" x="48" y="7" />
-      </g>
-    </svg>
-  </div>
-  <div class="header">
-    <ul>
-      <li><a href="../main_menu.html"><strong>首页</strong></a></li>
-      <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
-      <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
-      <li><a href="#"><strong>茶道文化</strong></a></li>
-      <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
-    </ul>
-    <span></span>
-    <input type="search">
-  </div>
-  <div class="flex">
-    <div class="left_white">
-    </div>
-    <div class="grid">
 
-      <div class="introduce">
-        <img src="../image/introduction/introduction_photo.jpg">
-        <p>
-          我们是一支由南开大学软件学院21级本科生组成的开发小队！这是我们的前端实训大作业！
-        </p>
-        <a href="https://github.com/Cu737/tea_website" target="_blank">
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="toptitle">
+      <p class="first_p">一帘春欲暮</p>
+      <p class="second_p">茶烟细杨落花风</p>
+    </div>
+    <img decoding="async" src="../image/tea1.jpg" style="width:100%" style="height: 100%;">
+  </div>
+  <div class="mySlides fade">
+    <div class="toptitle">
+      <p class="first_p">青箬小壶冰共裹</p>
+      <p class="second_p">寒灯新茗月同煎</p>
+    </div>
+    <img decoding="async" src="../image/tea5.jpg" style="width:100%" style="height: 100%;">
+  </div>
+  <div class="mySlides fade">
+    <div class="toptitle">
+      <p class="first_p">当年曾胜赏</p>
+      <p class="second_p">生香熏袖，活火分茶</p>
+    </div>
+    <img decoding="async" src="../image/tea7.jpg" style="width:100%" style="height: 100%;">
+  </div>
+</div>
+<div id="waves">
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" />
+      <use xlink:href="#gentle-wave" x="48" y="3" />
+      <use xlink:href="#gentle-wave" x="48" y="5" />
+      <use xlink:href="#gentle-wave" x="48" y="7" />
+    </g>
+  </svg>
+</div>
+<div class="header">
+  <ul>
+    <li><a href="../main_menu.html"><strong>首页</strong></a></li>
+    <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
+    <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
+    <li><a href="#"><strong>茶道文化</strong></a></li>
+    <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
+  </ul>
+  <span></span>
+  <input type="search">
+</div>
+<div class="flex">
+  <div class="left_white">
+  </div>
+  <div class="grid">
+
+    <div class="introduce">
+      <img src="../image/introduction/introduction_photo.jpg">
+      <p>
+        我们是一支由南开大学软件学院21级本科生组成的开发小队！这是我们的前端实训大作业！
+      </p>
+      <a href="https://github.com/Cu737/tea_website" target="_blank">
           <span>
             <img src="../image/introduction/github.png">
           </span>
-          <p>github地址</p>
+        <p>github地址</p>
+      </a>
+    </div>
+    <div class="main">
+      <!-- 在此处开始写 注意盒子宽度设为800px margin-right: 30px--,main的属性我已经设置好>
+    <！-->
+      <div class="content dis" id = "display_div">
+        <a href="#" class="commodity" v-for="(item,index) in items" :class ="{commodity_end:index%2==1}">
+          <img :src="item.src">
+          <p class="commodity_title">{{item.name}}</p>
+          <p class="commodity_cost">{{item.price}}</p>
+          <p class="commodity_describe">{{item.describe}}</p>
         </a>
       </div>
-      <div class="main">
-        <!-- 在此处开始写 注意盒子宽度设为800px margin-right: 30px--,main的属性我已经设置好>
-      <！-->
-        <div class="content dis">
-          <a href="#" class="commodity">
-            <img src="commodity_picture/one.jpg">
-            <p class="commodity_title">绿杨春</p>
-            <p class="commodity_cost">¥300/500g</p>
-            <p class="commodity_describe">仪征绿杨春，江苏省仪征市特产，全国农产品地理标志。仪征绿杨春是中国传统名茶，其特质为“汤色翠绿、味香醇厚”</p>
-          </a>
-
-          <a href="#" class="commodity commodity_end">
-            <img src="commodity_picture/two.jpg">
-            <p class="commodity_title">蜜兰香、肉桂香</p>
-            <p class="commodity_cost">¥120/套</p>
-            <p class="commodity_describe">蜜兰香单枞、肉桂香单枞是凤凰单枞十大花蜜香型珍贵名枞之一。蜜兰香有明显的甘薯“蜜味”。肉桂香成茶显肉桂香味，“山韵”突出，极耐冲泡。</p>
-          </a>
-          <a href="#" class="commodity">
-            <img src="commodity_picture/three.jpg">
-            <p class="commodity_title">芝兰香、玉兰香</p>
-            <p class="commodity_cost">¥3500/500g</p>
-            <p class="commodity_describe">芝兰香单枞、玉兰香单枞是凤凰单枞十大花蜜香型珍贵名枞之一。芝兰香香气幽雅。玉兰香成茶色泽乌岽，玉兰花香清幽馥郁。</p>
-          </a>
-
-          <a href="#" class="commodity commodity_end">
-            <img src="commodity_picture/four.jpg">
-            <p class="commodity_title">洞庭碧螺春</p>
-            <p class="commodity_cost">¥168/500g</p>
-            <p class="commodity_describe">碧螺春茶条索紧结，卷曲如螺，白毫毕露，银绿隐翠，叶芽幼嫩，冲泡后茶叶徐徐舒展，上下翻飞，茶水银澄碧绿，清香袭人，口味凉甜。</p>
-          </a>
-
-          <a href="#" class="commodity">
-            <img src="commodity_picture/five.jpg">
-            <p class="commodity_title">安吉白茶</p>
-            <p class="commodity_cost">¥500/500g</p>
-            <p class="commodity_describe">安吉白茶外形挺直略扁，形如兰蕙；色泽翠绿，白毫显露；冲泡后，清香高扬且持久。滋味鲜爽，饮毕，唇齿留香，回味甘而生津。</p>
-          </a>
-
-          <a href="#" class="commodity commodity_end">
-            <img src="commodity_picture/six.jpg">
-            <p class="commodity_title">武夷肉桂</p>
-            <p class="commodity_cost">¥20/20g</p>
-            <p class="commodity_describe">肉桂的桂皮香明显，佳者带乳味，香气久泡尤存，冲泡四、五次仍有余香；入口醇厚回甘，咽后齿颊留香；汤色橙黄清澈。</p>
-          </a>
-        </div>
-        <div class=endless>
-          <ul>
-            联系我们
-            <li style="padding-top: 10px">林铎鸣：2114010@mail.nankai.edu.cn</li>
-            <li>孙雨昕：2111498@mail.nankai.edu.cn</li>
-            <li>刘昌翰：2594651085@qq.com</li>
-            <li>卞一童：cucucu737@163.com</li>
-          </ul>
-        </div>
+      <div class=endless>
+        <ul>
+          联系我们
+          <li style="padding-top: 10px">林铎鸣：2114010@mail.nankai.edu.cn</li>
+          <li>孙雨昕：2111498@mail.nankai.edu.cn</li>
+          <li>刘昌翰：2594651085@qq.com</li>
+          <li>卞一童：cucucu737@163.com</li>
+        </ul>
       </div>
     </div>
-    <div class="right_white">
-    </div>
   </div>
+  <div class="right_white">
+  </div>
+</div>
+
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        text:"hello",
+        message:"helloo",
+        items:[
+          {name: "绿杨春",price:"¥300/500g", 'src': 'commodity_picture/one.jpg',describe:"仪征绿杨春，江苏省仪征市特产，全国农产品地理标志。仪征绿杨春是中国传统名茶，其特质为“汤色翠绿、味香醇厚”"},
+          {name:"蜜兰香、肉桂香",'src': 'commodity_picture/two.jpg',price: "¥120/套",describe:"蜜兰香单枞、肉桂香单枞是凤凰单枞十大花蜜香型珍贵名枞之一。蜜兰香有明显的甘薯“蜜味”。肉桂香成茶显肉桂香味，“山韵”突出，极耐冲泡。"},
+          {name:"芝兰香、玉兰香",'src': 'commodity_picture/three.jpg',price: "¥3500/500g",describe: "芝兰香单枞、玉兰香单枞是凤凰单枞十大花蜜香型珍贵名枞之一。芝兰香香气幽雅。玉兰香成茶色泽乌岽，玉兰花香清幽馥郁。"},
+          {name:"洞庭碧螺春",'src': 'commodity_picture/four.jpg',price: "¥168/500g",describe: "碧螺春茶条索紧结，卷曲如螺，白毫毕露，银绿隐翠，叶芽幼嫩，冲泡后茶叶徐徐舒展，上下翻飞，茶水银澄碧绿，清香袭人，口味凉甜。"},
+          {name:"安吉白茶",'src': 'commodity_picture/five.jpg',price: "¥500/500g",describe: "安吉白茶外形挺直略扁，形如兰蕙；色泽翠绿，白毫显露；冲泡后，清香高扬且持久。滋味鲜爽，饮毕，唇齿留香，回味甘而生津。"},
+          {name: "武夷肉桂",'src': 'commodity_picture/six.jpg',price: "¥20/20g",describe: "肉桂的桂皮香明显，佳者带乳味，香气久泡尤存，冲泡四、五次仍有余香；入口醇厚回甘，咽后齿颊留香；汤色橙黄清澈。"},
+
+        ]
+
+      }
+    }
+  }).mount('#display_div')
+</script>
 </body>
 
 </html>
