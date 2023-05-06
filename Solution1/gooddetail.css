@@ -1,0 +1,51 @@
+﻿.grid {
+    margin: 0 auto;
+    max-width: 980px;
+    display: flex;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 15px;
+}
+.feature {
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid #354f52;
+    box-shadow: #354f52 0px 0px 8px;
+}
+.content article {
+    padding: 5px,200px;
+    margin: 0px 30px;
+    font-family: 华文楷体;
+    font-size: 18px;
+    width: 300px;
+}
+    .content article h1 {
+        text-align: center;
+    }
+    .content article p {
+        text-align: justify;
+        text-justify: inter-ideograph;
+        text-indent: 2em;
+        margin: 10px auto;
+        line-height: 30px;
+       
+    }
+    .calculate{
+        display:inline-block;
+        margin-left:80px;
+        margin-top:20px;
+    }
+.cin {
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fefae0;
+    text-align: center;
+    font-size: 23px;
+}
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-size: 23px;
+    background-color: #a3b18a;
+}
