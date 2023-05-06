@@ -22,6 +22,32 @@ function scroll() {
         $('.header').css('background-color', '#cad2c5');
     }
 }
+function scroll1() {
+    var top = $("body").offset().top;
+    var scrollTop = $(window).scrollTop();
+    if(scrollTop>400)
+    {
+        if(scrollTop<=now_top)
+        {
+            now_top=scrollTop;
+            $('.header').css('visibility', 'visible');
+            $('.header').css('background-color', '#cad2c5');
+        }
+        else{
+            now_top=scrollTop;
+            $('.header').css('visibility', 'hidden');
+        }
+    }
+    else if(scrollTop==0)
+    {
+        $('.header').css('visibility', 'visible');
+        $('.header').css('background-color', 'transparent');
+    }
+    else{
+        $('.header').css('visibility', 'hidden');
+    }
+}
+var now_top=0;
 $(window).on('scroll', function() {
-    scroll()
+    scroll1()
 });
