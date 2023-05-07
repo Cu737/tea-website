@@ -29,13 +29,14 @@
         line-height: 30px;
        
     }
-    .calculate{
-        display:inline-block;
-        margin-left:80px;
-        margin-top:20px;
-    }
+.calculate {
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: 20px;
+    margin-top: 20px;
+}
 .cin {
-    width: 50px;
+    width: 80px;
     height: 30px;
     border-radius: 15px;
     background-color: #fefae0;
@@ -43,9 +44,17 @@
     font-size: 23px;
 }
 button {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    font-size: 23px;
+    height: 30px;
+    width: 40px;
+    border-radius: 10px;
+    font-size: 26px;
     background-color: #a3b18a;
+    margin-left:10px;
+    margin-right:10px;
+}
+.content .type {
+    font-size: 28px;
+    margin-right: 10px;
+    font-family: 华文楷体;
+    margin-left:20px;
 }
