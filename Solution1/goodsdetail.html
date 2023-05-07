@@ -92,13 +92,28 @@
                            </p>
                        </article>
                     </main>
-                    <div class="calculate">
-                        <div class="type">商品数量：</div>
-                        <button onclick="add()">+</button>
-                        <input type="text" class="cin" id="text" value="1">
-                        <button onclick="sub()">-</button>
-                        <div class="type">商品总价：</div>
-                        <input type="text" class="cin" id="cost" value="120">
+                    <div class="infbox">
+                        <div class="calculate">
+                            <div class="type">商品数量：</div>
+                            <button onclick="add()">+</button>
+                            <input type="text" class="cin" id="text" value="1">
+                            <button onclick="sub()">-</button>
+                            <div class="type">商品总价：</div>
+                            <input type="text" class="cin" id="cost" value="120">
+                        </div>
+                        <div class="information">
+                            <div class="fis_line">
+                                <div class="type">姓名：</div>
+                                <input type="text" class="name" id="name">
+                                <div class="type">电话号码：</div>
+                                <input type="text" class="telenum" id="telenum">
+                            </div>
+                            <div class="sed_line">
+                                <div class="type">送货地址：</div>
+                                <input type="text" class="adress" id="address">
+                            </div>
+                        </div>
+                        <button onclick="check()" class="check">确认</button>
                     </div>
                 </div>
                 <div class=endless>

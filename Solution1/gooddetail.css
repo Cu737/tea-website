@@ -35,13 +35,34 @@
     margin-left: 20px;
     margin-top: 20px;
 }
-.cin {
-    width: 80px;
+input {
     height: 30px;
     border-radius: 15px;
     background-color: #fefae0;
     text-align: center;
     font-size: 23px;
+}
+.information {
+    margin-top:10px;
+    padding-top: 10px;
+    border-top: 3px dashed #a3b18a;
+}
+.cin {
+    width:80px;
+}
+.name{
+    width:150px;
+}
+.telenum{
+    width:200px;
+}
+.adress{
+    width:600px;
+    margin-left:30px;
+}
+.fis_line {
+    display: flex;
+    flex-wrap: wrap;
 }
 button {
     height: 30px;
@@ -57,4 +78,19 @@ button {
     margin-right: 10px;
     font-family: 华文楷体;
     margin-left:20px;
+}
+.infbox {
+    border: 5px dashed #a3b18a;
+    margin-top: 20px;
+    padding-bottom:20px;
+    border-radius:25px;
+}
+.check {
+    margin-left:300px;
+    height: 50px;
+    width: 90px;
+    border-radius: 20px;
+    font-size: 26px;
+    background-color: #a3b18a;
+    margin-top:20px;
 }
