@@ -69,11 +69,12 @@
             <div class="main">
                 <div class="tea_kind" id="tea_kind_id">
                     <h1>——————— 茶的种类 ———————</h1>
-                    <li class="tea_kind_title" v-for="item in facade_item" @mouseenter="seenter">
+                    <li class="tea_kind_title" v-for="(item,index) in facade_item" @mouseenter="seenter(index)" @mouseleave="leaver(index)">
                         <img class="facade" :src="item.src_img">
                         <img class="obverse" :src="item.src_img">
-                        <a href="#" v-for="item in word_item">{{item.content}}</a>
-                        <p v-show="">{{item.img_text}}</p>
+                        <!-- <a href="#" v-show="judge_switch[index]" v-for="item in word_item">{{item.content}}</a> -->
+                        <a href="#" v-for="(word_item,tea_index) in word_items[index].tea_content" v-show="!judge_switch[index]" style="float:left; width:100px; height:50px; margin-top:30px; font-size: 30px; z-index:5; position:relative">{{word_items[index].tea_content[tea_index]}}</a>
+                        <p v-show="judge_switch[index]">{{item.img_text}}</p>
                     </li>
                     <li>
                         <a href="#">点击了解更多</a>
