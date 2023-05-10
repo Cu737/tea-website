@@ -85,27 +85,12 @@
       <div class=content id = "history_article">
         <nav>
           <ul>
-            <li>
-              <a href="shennong.html">神农时代</a>
-            </li>
-            <li>
-              <a href="xiashangzhou.html">夏商两周</a>
-            </li>
-            <li>
-              <a href="qinhanweijin.html">秦汉魏晋</a>
-            </li>
-            <li>
-              <a href="tangsong.html">隋唐两宋</a>
-            </li>
-            <li>
-              <a href="yuanmingqing.html">元明清朝</a>
-            </li>
-            <li>
-              <a href="dangxia.html">当下发展</a>
-            </li>
+            <button v-for="(title,index) in titles" v-on:click="getIndex(index)">
+              {{title}}
+            </button>
           </ul>
         </nav>
-        <article v-html="text[0]">
+        <article v-html="text[liIndex]">
         </article>
       </div>
       <div class=endless>
