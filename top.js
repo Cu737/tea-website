@@ -12,6 +12,31 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000); // 切换时间为 2 秒
 }
+let kind_li=document.querySelector(".tea_kind_title");
+console.log(kind_li);
+kind_li.addEventListener("mouseenter",function(){
+    alert("11");
+})
+// for(let i=0;i<6;i++)
+// {
+//     kind_li[i].addEventListener('mouseseenter',function(){
+//         alert("11")
+//     })
+//     // kind_li[i].addEventListener('mouseseenter',function(e){
+//     //                 for(let i=0;i<4;i++)
+//     //                 {
+//     //                     e.write('<a href="#">h1</a>')
+//     //                 }}
+//     //                 )
+// }
+
+//     addEventListener('mouseseenter',function(e){
+//             for(let i=0;i<4;i++)
+//             {
+//                 e.write('<a href="#">h1</a>')
+//             }}
+//             )
+// }
 function scroll() {
     var top = $("body").offset().top;//获取导航栏变色的位置距顶部的高度
     var scrollTop = $(window).scrollTop();//获取当前窗口距顶部的高度
@@ -63,5 +88,7 @@ Vue.createApp({
                 "../image/tea7.jpg"
             ]
         }
-    }
-}).mount('#slideshow-container_id')
+    },
+    
+}
+).mount('#slideshow-container_id')
