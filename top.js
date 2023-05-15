@@ -13,10 +13,6 @@ function showSlides() {
     setTimeout(showSlides, 3000); // 切换时间为 2 秒
 }
 let kind_li=document.querySelector(".tea_kind_title");
-console.log(kind_li);
-kind_li.addEventListener("mouseenter",function(){
-    alert("11");
-})
 // for(let i=0;i<6;i++)
 // {
 //     kind_li[i].addEventListener('mouseseenter',function(){
