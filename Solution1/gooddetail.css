@@ -55,10 +55,19 @@ input {
 .telenum{
     width:200px;
 }
-.adress{
-    width:600px;
-    margin-left:30px;
-    height: auto;
+.adress {
+    width: 600px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 80px;
+    font-family: 华文楷体;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: 15px;
+    background-color: #fefae0;
+    text-align: left;
+    font-size: 23px;
+    padding:10px 10px 10px 10px;
 }
 .fis_line {
     display: flex;
