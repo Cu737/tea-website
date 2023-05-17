@@ -22,5 +22,4 @@ function check() {
     name = document.getElementById("name");
     tele = document.getElementById("telenum");
     address = document.getElementById("address");
-    //如果需要传送信息给后端的话可以直接用啦~，str是物品数目，str2是商品总价
 }

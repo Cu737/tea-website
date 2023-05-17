@@ -18,17 +18,21 @@
     text-indent: 20px;
     border-radius: 25px;
 }
-.content nav ul li {
+.content nav ul button {
+    font-size: 100%;
+    background-color: #3a5a40;
     display: inline-block;
     width: 20%;
     border-radius: 25px;
-}
-.content nav a {
-    display: block;
     color: #e9edc9;
     text-decoration: none;
     padding: .5em 1em;
+    border-top-color: #354f52;
+    border-left-color: #354f52;
+    border-right-color: #e9edc9;
+    border-bottom-color: #e9edc9;
 }
+
 .main {
     width: 800px;
     margin-right: 30px;
