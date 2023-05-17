@@ -537,6 +537,14 @@ svg:not(:root) {
 
 }
 
+.floatTea{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 200px;
+    background-color: #344e41;
+}
+
 .right_white {
     position: relative;
     width: 181.2px;
@@ -586,3 +594,4 @@ svg:not(:root) {
     position: relative;
     z-index: 4;
 }
+
