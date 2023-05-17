@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\commodity",
+    "\\commodity\\commodity_picture",
+    "\\Solution1"
   ],
-  "SelectedNode": "\\main_menu.html",
   "PreviewInSolutionExplorer": false
 }
