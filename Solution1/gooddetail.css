@@ -1,0 +1,96 @@
+﻿.grid {
+    max-width: 980px;
+    display: flex;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 15px;
+}
+.feature {
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid #354f52;
+    box-shadow: #354f52 0px 0px 8px;
+}
+.content article {
+
+    margin: 0px 30px;
+    font-family: 华文楷体;
+    font-size: 18px;
+    width: 300px;
+}
+    .content article h1 {
+        text-align: center;
+    }
+    .content article p {
+        text-align: justify;
+        text-justify: inter-ideograph;
+        text-indent: 2em;
+        margin: 10px auto;
+        line-height: 30px;
+       
+    }
+.calculate {
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+input {
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fefae0;
+    text-align: center;
+    font-size: 23px;
+}
+.information {
+    margin-top:10px;
+    padding-top: 10px;
+    border-top: 3px dashed #a3b18a;
+}
+.cin {
+    width:80px;
+}
+.name{
+    width:150px;
+}
+.telenum{
+    width:200px;
+}
+.adress{
+    width:600px;
+    margin-left:30px;
+    height: auto;
+}
+.fis_line {
+    display: flex;
+    flex-wrap: wrap;
+}
+button {
+    height: 30px;
+    width: 40px;
+    border-radius: 10px;
+    font-size: 26px;
+    background-color: #a3b18a;
+    margin-left:10px;
+    margin-right:10px;
+}
+.content .type {
+    font-size: 28px;
+    margin-right: 10px;
+    font-family: 华文楷体;
+    margin-left:20px;
+}
+.infbox {
+    border: 5px dashed #a3b18a;
+    margin-top: 20px;
+    padding-bottom:20px;
+    border-radius:25px;
+}
+.check {
+    margin-left:300px;
+    height: 50px;
+    width: 90px;
+    border-radius: 20px;
+    font-size: 26px;
+    background-color: #a3b18a;
+    margin-top:20px;
+}
