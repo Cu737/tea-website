@@ -1,0 +1,132 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../top.js" defer="defer"></script>
+</head>
+
+<body>
+    <div class="slideshow-container" id="slideshow-container_id">
+        <div class="mySlides fade" v-for="(item,index) in items">
+            <div class="toptitle">
+                <p class="first_p">{{item.first}}</p>
+                <p class="second_p">{{item.second}}</p>
+            </div>
+            <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
+        </div>
+    </div>
+    <div class="header">
+        <ul>
+            <li><a href="../Main_menu/main_menu.html"><strong>首页</strong></a></li>
+            <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
+            <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
+            <li><a href="#"><strong>茶道文化</strong></a></li>
+            <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
+        </ul>
+        <span></span>
+        <input type="search">
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
+    </div>
+    <div class="flex">
+        <div class="left_white">
+        </div>
+        <div class="grid">
+
+            <div class="introduce">
+                <img src="../image/introduction/introduction_photo.jpg">
+                <p>
+                    我们是一支由南开大学软件学院21级本科生组成的开发小队！这是我们的前端实训大作业！
+                </p>
+                <a href="https://github.com/Cu737/tea_website" target="_blank">
+                    <span>
+                        <img src="../image/introduction/github.png">
+                    </span>
+                    <p>github地址</p>
+                </a>
+            </div>
+            <div class="main">
+                <!-- 在此处开始写 注意盒子宽度设为800px margin-right: 30px--,main的属性我已经设置好>
+                <！-->
+                <div class=content>
+                    <article>
+                        <h1>勿忘我花茶</h1>
+                        <p>
+                            勿忘我花茶（Myosotis sylvatica），多年生紫草科勿忘草属草本植物，叶互生，狭倒披针形或条状倒披针形，花杂蓝色，蓝色花朵中央有一圈黄色心蕊。喜阳，能耐阴，易自播繁殖。花小巧秀丽，色彩搭配和谐醒目，尤其是卷伞花序随着花朵的开放逐渐伸长，半含半露，惹人喜爱，令人难忘。青年男女互赠勿忘我，以表达深切情意。
+                        </p>
+                        <h2>特征</h2>
+                        <p>
+                            切花特征
+                        </p>
+                        <p>
+                            采后处理简单，适宜作鲜切花或干花。
+                        </p>
+                        <p>
+                            生态习性
+                        </p>
+                        <p>
+                            喜干燥、凉爽的气候，忌湿热，喜光，耐旱，生长适温为20℃-25℃。适宜在疏松、肥沃、排水良好的微碱性土壤中生长。
+                        </p>
+                        <p>
+                            采切发育阶段
+                        </p>
+                        <p>
+                            在大部分花朵开放并显色时采切；亦可在较早阶段采切，再用含有赤霉素的保鲜剂促使开放。
+                        </p>
+                        <p>
+                            外型特点
+                        </p>
+                        <p>
+                            原产欧亚大陆。多年生草本植物，叶互生，狭倒披针形或条状倒披针形。喜阳，能耐阴，易自播繁殖。勿忘我花小巧秀丽，蓝色花朵中央有一圈黄色心蕊，色彩搭配和谐醒目，尤其是卷伞花序随着花朵的开放逐渐伸长，半含半露，惹人喜爱，令人难忘。一、二年生草本植物，茎高10~50cm，特别在野生状态中，尤为细小纤弱，花杂蓝色。有变种白花勿忘我与红花勿忘我。青年男女互赠勿忘我，以表达深切情意。
+                        </p>
+                        <h2>功效</h2>
+                        <p>
+                            勿忘我除了观赏外，作为药品亦堪称上品。中医认为，勿忘我花性味甘、寒，入肝、脾、肾经，有清热解毒、清心明目、养阴补肾之功，适用于肺风粉刺、疔疮疖肿、皮肤粗糙、视物昏花、大便秘结、小便短黄等。并能美白肌肤，有护肤养颜之功。
+                        </p>
+                        <h2>冲泡</h2>
+                        <p>
+                            勿忘我花（蓝色）适量，绿茶1茶匙，蜂蜜少许。
+                        </p>
+                        <p>
+                            做法
+                        </p>
+                        <p>
+                            1.将勿忘我花与绿茶置于杯内，以热开水冲泡。
+                        </p>
+                        <p>
+                            2.约等3分钟，让勿忘我花入味后，再加入蜂蜜即可。
+                        </p>
+                    </article>
+                </div>
+                <div class=endless>
+                    <h1>尾标签</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="right_white">
+    </div>
+</body>
+
+</html>
