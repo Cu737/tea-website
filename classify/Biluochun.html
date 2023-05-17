@@ -8,15 +8,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="../style.css">
-
-    <script src="top.js" defer="defer"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../top.js" defer="defer"></script>
 </head>
 
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <!-- <div class="numbertext">1 / 3</div> -->
-            <img decoding="async" src="../image/tea.jpg" style="width:100%" style="height: 100%;">
+    <div class="slideshow-container" id ="slideshow-container_id">
+        <div class="mySlides fade"  v-for="(item,index) in items" >
+            <div class="toptitle">
+                <p class="first_p">{{item.first}}</p>
+                <p class="second_p">{{item.second}}</p>
+            </div>
+            <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
         </div>
     </div>
     <div class="header">
@@ -29,6 +33,20 @@
         </ul>
         <span></span>
         <input type="search">
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
     </div>
     <div class="flex">
         <div class="left_white">
@@ -58,7 +76,7 @@
                         <p>
                             碧螺春是中国传统名茶，中国十大名茶之一，属于绿茶类，已有1000多年历史。碧螺春产于江苏省苏州市吴县太湖的东洞庭山及西洞庭山（今苏州吴中区）一带，所以又称“洞庭碧螺春”。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/0eb30f2442a7d933c895f8130a1dc61373f08202ab0f?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun1.png"/>
                         <p>
                             唐朝时就被列为贡品，古人们又称碧螺春为“功夫茶”、“新血茶”。高级的碧螺春，茶芽之细嫩0.5公斤干茶需要茶芽6-7万个。炒成后的干茶条索紧结，白毫显露，色泽银绿，翠碧诱人，卷曲成螺，产于春季，故名“碧螺春”。此茶冲泡后杯中白云翻滚，清香袭人，是中国的名茶。主要工序为杀青、揉捻、搓团显毫、炒青。
                         </p>
@@ -68,32 +86,32 @@
                         <p>
                             碧螺春茶已有1000多年历史，当地民间最早叫洞庭茶，又叫吓煞人香。相传有一尼姑上山游春，顺手摘了几片茶叶，泡茶后奇香扑鼻，脱口而道“香得吓煞人”，由此当地人便将此茶叫“吓煞人香”。到了清代康熙年间，康熙皇帝视察时品尝了这种汤色碧绿、卷曲如螺的名茶，倍加赞赏，但觉得“吓煞人香”其名不雅，于是题名“碧螺春”。关于此茶名称的来历除了康熙皇帝巡幸太湖时亲赐之外，也有碧螺春在明代时就已有茶名的传说，还有一种巧妙的解释说取其色泽碧绿，卷曲如螺，春季采制，又采自碧螺峰这些特点，因而命名为碧螺春。此茶有悠久历史，在清代康熙年间就已成为年年进贡的贡茶。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/9922720e0cf3d7ca7bcb95237b49a9096b63f6240315?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun2.png" />
                         <p>
                             洞庭碧螺春产区是中国著名的茶、果间作区。茶树和桃、李、杏、梅、柿、桔、白果、石榴、泉城红、泉城绿、等果木交错种植。茶树、果树枝桠相连，根脉相通，茶吸果香，花窨茶味，陶冶着碧螺春花香果味的天然品质。正如明代《茶解》中所说：“茶园不宜杂以恶木，唯桂、梅、辛夷、玉兰、玫瑰、苍松、翠竹之类与之间植，亦足以蔽覆霜雪，掩映秋阳。” 茶树、果树相间种植，令碧螺春茶独具天然茶香果味，品质优异。其成品茶外形紧密，条索纤细，嫩绿隐翠，清香幽雅，鲜爽生津，汤色碧绿清澈，叶底柔匀，饮后回甘。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/8326cffc1e178a8222332daef603738da977e8b5?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun3.png" />
                         <p>
                             碧螺春茶条索紧结，卷曲如螺，白毫毕露，银绿隐翠，叶芽幼嫩，冲泡后茶叶徐徐舒展，上下翻飞，茶水银澄碧绿，清香袭人，口味凉甜，鲜爽生津，早在唐末宋初便列为贡品。碧螺春，名若其茶，色泽碧绿，形似螺旋，产于早春。
                         </p>
                         <p>
                             外形条索纤细，茸毛遍布，白毫隐翠；泡成茶后，色嫩绿明亮，味道清香浓郁，饮后有回甜之感。人们赞道：“铜丝条，螺旋形，浑身毛，花香果味，鲜爽生津”。洞庭碧螺独特的花果香，主要是因为它生长在果园之中，并且接受了洞庭特有水土的滋养。其他碧螺春是没有清香和果香的，只有沃土气和青叶气。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/962bd40735fae6cdcf80bbf305b30f2442a70f6f?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun4.png" />
                         <p>
                             洞庭碧螺春是中国名茶的珍品，以形美、色艳、香浓、味醇“四绝”闻名于中外。碧螺春始于何时，名称由来，说法颇多。据清代《野史大观》（卷一）载：“洞庭东山碧螺峰石壁，产野茶数株，土人称曰：‘吓煞人香’。康熙己卯……抚臣朱荦购此茶以进……，以其名不雅驯，题之曰碧螺春。自地方有司，岁必采办进奉矣。”又据相传，明朝期间，宰相王鳌，是东后山陆巷人，“碧螺春”名称系他所题。
                         </p>
                         <p>
                             据《随见录》载“洞庭山有茶，微似岕而细，味甚甘香，俗称‘吓煞人’，产碧螺峰者尤佳，名‘ 碧螺春’”。若以此为实，则碧螺春茶应始于明朝，在乾隆下江南之前就已名声显赫了。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/3c6d55fbb2fb43166d22da2fa9f2512309f790527515?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun5.png" />
                         <p>
                             清代王应奎《柳南随笔》记载：清圣祖康熙皇帝，于康熙三十八年（1699）春，第三次南巡车驾幸太湖。巡抚宋荦从当地制茶高手朱正元处购得精制的“吓煞人香”进贡，帝以其名不雅驯，题之日“碧螺春”。这即是碧螺春雅名由来的故事之一。后人评曰，此乃康熙帝取其色泽碧绿，卷曲似螺，春时采制，又得自洞庭碧螺峰等特点，钦赐其美名。从此碧螺春遂闻名于世，成为清宫的贡茶了。
                         </p>
                         <p>
                             2009年起，洞庭碧螺春茶将实施新的国家产品质量标准，新标准的实施，将统领碧螺春茶产业发展的核心，调整茶叶种植、加工生产、销售消费及政府监管的各个领域。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/8644ebf81a4c510fd9f97c4fe90f322dd42a28340f15?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun6.png" />
                         <h2>
                             产地分布
                         </h2>
@@ -110,7 +128,7 @@
                         <p>
                             碧螺春采摘有三大特点：一是摘得早，二是采得嫩，三是拣得净。每年春分前后开采，谷雨前后结束，以春分至清明采制的明前茶品质最为名贵。通常采芽叶初展，芽长1.6～2.0厘米的原料，叶形卷如雀舌，称之为“雀舌”，炒制500克高级碧螺春约需采6.8～7.4万颗芽头，历史上曾有500克干茶达到9万颗左右芽头，可见茶叶之幼嫩，采摘功夫之深非同一般。细嫩的芽叶，含有丰富的氨基酸和茶多酚。优越的环境条件，加之优质的鲜叶原料，为碧螺春品质的形成提供了物质基础。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/e1fe9925bc315c60ba6153478db1cb13485477a5?x-bce-process=image/resize,m_lfit,w_440,limit_1" />
+                        <img src="image/biluochun7.jpg" />
                         <p>
                             采回的芽叶必须及时进行精心拣剔，剔去鱼叶和不符标准的芽叶，保持芽叶匀整一致。通常拣剔一公斤芽叶，需费工2～4小时。其实，芽叶拣剔过程也是鲜叶摊放过程，可促使内含物轻度氧化，有利于品质的形成。一般5~9时采，9～15时拣剔15时～晚上炒制，做到当天采摘，当天炒制，不炒隔夜茶。
                         </p>
@@ -134,7 +152,7 @@
                         <p>
                             手不离茶，茶不离锅，揉中带炒，炒中有揉，炒揉结合，连续操作，起锅即成。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/caef76094b36acaf2adcd2de7dd98d1001e99cd7?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun8.png" />
                         <h2>
                             品级分类
                         </h2>
@@ -144,7 +162,7 @@
                         <p>
                             上等的碧螺春银白隐翠，条索细长，卷曲成螺，身披白毫，冲泡后汤色碧绿清澈，香气浓郁，滋味鲜醇甘厚，回甘持久。伪劣的碧螺春则颜色发黑，披绿毫，暗淡无光，冲泡后无香味，汤色黄暗如同隔夜陈茶。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/9213b07eca8065380d95f61d97dda144ad348244?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun9.png" />
                         <p>
                             碧螺春的品质优异，据清末震钧（1857～1918年）所著《茶说》中道：“茶以碧萝（螺）春为上，不易得，则苏之天池，次则龙井；岕茶稍粗…….....次六安之青者（今六安瓜片）”。可见，碧螺春在历史上就荣以为冠。其品质特点是：条索纤细、卷曲成螺，满身披毫，银白隐翠，香气浓郁，滋味鲜醇甘厚，汤色碧绿清澈，叶底嫩绿明亮。有“一嫩（芽叶）三鲜”（色、香、味）之称。
                         </p>
@@ -158,7 +176,7 @@
                         <p>
                             国家标准对洞庭碧螺春茶按产品质量分为特一级、特二级、一级、二级、三级五个等级，其中特一级、特二级最为名贵。芽叶随1～7级逐渐增大，茸毛逐渐减少。炒制锅温、投叶量、用力程度，随级别降低而增加，即级别低锅温高，投叶量多，做形时用力较重。碧螺春茶每年春分前后采摘，谷雨前后结束，以春分至清明采制的明前碧螺春茶品质最为上乘。通常采一芽一叶初展，芽长1.6—2.0厘米的原料，叶形卷如雀舌，称之“雀舌”。 一般过了4月20日的茶叶，当地人就不叫碧螺春了，而叫炒青。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/78310a55b319ebc4b7457ff92570d8fc1e178a82b80f?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun10.png" />
                         <p>
                             特一级：条索纤细，卷曲成螺，满身批毫，银绿隐翠，色泽鲜润，香气嫩香清幽，滋味甘醇鲜爽，汤色嫩绿清澈明亮，叶底嫩匀多芽，在鲜叶挑拣上从碧螺春茶一芽一叶(俗称一棋一xxx芽似xxx叶如旗)炒制，改为单芽。
                         </p>
@@ -180,7 +198,7 @@
                         <p>
                             一级炒青茶：外形尚成螺,色泽深绿。尚整，稍有青壳碎片，滋味尚纯正，汤色黄绿，叶底尚嫩欠匀，稍有青张，绿稍深。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/0824ab18972bd407726f7cb07b899e510eb309d6?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun11.png" />
                         <h2>品茗指南</h2>
                         <h3>鉴别方法</h3>
                         <p>
@@ -196,7 +214,7 @@
                         <p>
                             龙井出自西湖，龙井是中国杭州四大名茶之一，有“色绿、香郁、味甘、形美”四绝的特点。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/5ab5c9ea15ce36d3322dc7123bf33a87e950b1e3?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun12.png" />
                         <h3>外形特点</h3>
                         <p>
                             条索纤细、卷曲、呈螺形，茸毛遍布全身，色泽银绿隐翠，毫风毕露，茶芽幼嫩、完整，无叶柄、无“裤子脚”、无黄叶和老片。
@@ -217,7 +235,7 @@
                         <p>
                             3、第一泡的茶汤，尚余三分之一，则可续水。此乃二泡。如若茶叶瘦弱的茶，二泡茶汤正浓，饮后舌本回甘，齿颊生香，余味无量。饮至三泡，则一般茶味已淡。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/0df3d7ca7bcb0a46231ecf1b6a63f6246b60afd0?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun13.png" />
                         <p>二、条索松展的茶</p>
                         <p>
                             1、烫杯后，取茶入杯。此时较高的杯温已隐隐烘出茶香。
@@ -228,7 +246,7 @@
                         <p>
                             3、稍停约两分钟，待干茶吸水伸展，再冲水至满。冲水方法如前。此时 茶叶或徘徊飘舞，或游移于沉浮之间，别具茶趣。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/b3b7d0a20cf431adca26061b4a36acaf2edd981f?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun14.png" />
                         <h3>饮用方法</h3>
                         <p>
                             1．请选择安静优雅，空气清新的环境。
@@ -250,7 +268,7 @@
                         <p>
                             碧螺春贮藏条件十分讲究。传统的贮藏方法是纸包茶叶，袋装块状石灰，茶、灰间隔放置缸中，加盖密封吸湿贮藏。随着科学的发展，往年亦有采用三层塑料保鲜袋包装，分层紧扎，隔绝空气，放在10°C以下冷藏箱或电冰箱内贮藏，久贮年余，其色、香、味犹如新茶，鲜醇爽口。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/6a63f6246b600c3350529aea1b4c510fd9f9a1ed?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun15.png" />
                         <h2>茶叶文化</h2>
                         <p>茶道</p>
                         <p>碧螺春茶茶艺(上投法）</p>
@@ -281,7 +299,7 @@
                         <p>
                             即用茶导将茶荷里的碧螺春依次拨到已冲了水的玻璃杯中去。满身披毫、银白隐翠的碧螺春如雪花纷纷扬扬飘落到杯中，吸收水分后即向下沉，瞬时间白云翻滚，雪花翻飞，煞是好看。
                         </p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/d4628535e5dde71187f907d4a6efce1b9d1661ec?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" />
+                        <img src="image/biluochun16.png" />
                         <p>7．观色——春染碧水</p>
                         <p>
                             碧螺春沉入水中后，杯中的热水溶解了茶里的营养物质，逐渐变为绿色，整个茶杯好像盛满了春天的气息。
@@ -309,7 +327,7 @@
                         <h2>产品荣誉</h2>
                         <p>2020年7月27日，洞庭（山）碧螺春茶入选中欧地理标志第二批保护名单。</p>
                         <p>2022年11月29日，苏州洞庭湖碧螺春制作技艺申遗成功，列入联合国教科文组织人类非物质文化遗产代表作名录。</p>
-                        <img src="https://bkimg.cdn.bcebos.com/pic/3c6d55fbb2fb43166d22da2fa9f2512309f790527515?x-bce-process=image/resize,m_lfit,h_120,limit_1" />
+                        <img src="image/biluochun17.jpg" />
                     </article>
                 </div>
                 <div class=endless>
@@ -321,13 +339,6 @@
     </div>
     <div class="right_white">
     </div>
-
-
-
-
-
-
-
 </body>
 
 </html>
