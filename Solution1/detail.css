@@ -1,12 +1,10 @@
 ﻿.content nav {
-    background-color: #3a5a40;
     padding: .5em;
     top: 50px;
     border-radius: 25px;
     font-family: "title_font";
     font-size: 18px;
 }
-
 .content nav ul {
     margin: 0;
     padding: 0;
@@ -27,6 +25,7 @@
     color: #e9edc9;
     text-decoration: none;
     padding: .5em 1em;
+    margin-left:2px;
     border-top-color: #354f52;
     border-left-color: #354f52;
     border-right-color: #e9edc9;
