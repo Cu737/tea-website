@@ -8,7 +8,7 @@ Vue.createApp({
                 " <h1>\n" +
                 "                                神农不倦尝百草，因缘际会得遇茶\n" +
                 "                            </h1>\n" +
-                "                            <img src=\"shennong1.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                            <img src=\"image/shennong1.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                            <p>\n" +
                 "                                神农尝百草的传说与茶的发现\n" +
                 "                                神农，也就是远古三皇之一的炎帝，相传在公元前2700多年以前的神农时代。神农为了给人治病，经常到深山野岭去采集草药，\n" +
@@ -21,7 +21,7 @@ Vue.createApp({
                 "                                舌底生津，精神振奋，刚才的不适一扫而空。他感到好奇怪，于是，再拾起几片叶子细细观察，他发现这种树叶的叶形、叶脉、\n" +
                 "                                叶缘均与一般的树木不同。神农便采集了一些带回去细细研究。后来，就把它命名为'茶'。\n" +
                 "                            </p>\n" +
-                "                            <img src=\"shennong2.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                            <img src=\"image/shennong2.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                            <p>\n" +
                 "                                唐．陆羽《茶经》：“茶之为饮，发乎神农氏。”，在中国的文化发展史上，往往是把一切与农业、与植物相关的事物起源最终\n" +
                 "                                都归结于神农氏。\n" +
@@ -36,7 +36,7 @@ Vue.createApp({
                 "<h1>\n" +
                 "                            夏商始待茶以药，东西两周立茶道\n" +
                 "                        </h1>\n" +
-                "                        <img src=\"xiashangzhou1.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/xiashangzhou1.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            茶最早开始有文字记载，是在商朝，为茶的原始利用期，在商周的时候中国饮茶主要以咀嚼鲜叶、煮成菜羹、熬煮茶水三种使用\n" +
                 "                            方法，并在这个基础上初步发展出了一些饮茶的理论，直至现在，云南少数民族也保留着此传统。\n" +
@@ -50,7 +50,7 @@ Vue.createApp({
                 "                            柏茶叶在周朝时已经形成小规模种植，并且在当时已经成为饮品。禹汤的发展，使桐柏人民对茶的认识也不断的深入，使用范围\n" +
                 "                            也逐渐的扩大。虽然在历史上对于茶的发展方面，这段时期没有非常明确的记载，但实际上对于桐柏茶的发展也是重要的时期。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"xiashangzhou2.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/xiashangzhou2.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            西周时期，这种饮食茶叶的习惯得到了继承和发展，茶叶的苦中有甜，苦后回甘，令人回味，广泛受到普通人和王公贵族的喜爱，因\n" +
                 "                            此周朝就有了最早的人工栽培的茶园，此时，巴蜀地区茶叶生产已有一定规模，巴蜀地区多疫病，民众们以茶为生，认为只有吃茶才\n" +
@@ -76,7 +76,7 @@ Vue.createApp({
                 "<h1>\n" +
                 "                            秦汉茶饼煮可食，魏晋茶入百姓家\n" +
                 "                        </h1>\n" +
-                "                        <img src=\"qinhanweijin1.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/qinhanweijin1.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            在秦朝，茶得到了广泛的传播，人们也不再单一的吃茶了，而逐渐当饮品来喝，同时依然作为药用。\n" +
                 "                        </p>\n" +
@@ -99,7 +99,7 @@ Vue.createApp({
                 "                            色赤，捣末，置瓷器中，以汤浇覆之，用葱姜、橘子芼之。”这种烹茶法一直延续到唐宋时代，只是“用葱姜、橘子芼之”的做\n" +
                 "                            法在唐宋以后不见记载。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"qinhanweijin3.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/qinhanweijin3.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            汉代是我国饮茶史上的一个重要阶段。西汉王褒在四川成都与家僮订立的契约《僮约》中规定了家僮的日常事务就有 “烹荼尽具，\n" +
                 "                            已而盖藏”和“牵犬贩鹅，武阳买茶”。武阳即今天四川彭山县，从成都跑到几百里外的彭山县去买茶，可见它不是在附近随时可\n" +
@@ -107,7 +107,7 @@ Vue.createApp({
                 "                            物或药饮用具是混用的。 而汉朝，要在契约中专门规定“烹荼尽具”(煮完茶后要把茶具收拾干净)，说明了当时已经有专门用于\n" +
                 "                            饮茶的茶具，茶具可能不止一两个，是一套，也足见茶具清洗起来是有工作量的、是贵重的。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"qinhanweijin2.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/qinhanweijin2.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            左思《娇女诗》描写了西晋贵族家庭饮茶的日常：两位天真烂漫的女儿在一直玩耍，口渴了急着要喝茶，只想茶水快点烧开，对着\n" +
                 "                            茶妒用嘴吹火，最后衣袖弄脏了，脸蛋熏黑了，遭到长辈教训，掩泪面壁。这是一首描写居家生活的诗，可见当时喝茶是家常事，\n" +
@@ -130,13 +130,13 @@ Vue.createApp({
                 "<h1>\n" +
                 "                            隋唐繁盛风俗成，两宋琐碎浮华生\n" +
                 "                        </h1>\n" +
-                "                        <img src=\"tangsong1.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/tangsong1.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            隋唐时，茶叶多加工成饼茶。饮用时，加调味品烹煮汤饮。随着茶事的兴旺和贡茶的出现，加速了茶叶栽培和加工技术的发展，\n" +
                 "                            涌现出了许多名茶，品饮之法也有较大改进。为改善茶叶苦涩味，开始加入薄荷、盐、红枣调味。此外，开始使用专门的烹茶\n" +
                 "                            器具， 饮茶的方式也发生了显著变化，由之前的粗放式转为细煎慢品式。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"tangsong3.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/tangsong3.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            公元780年左右，陆羽著成《茶经》，阐述了茶学、茶艺、茶道思想。这一时期由于茶人辈出，使饮茶之道对水、茶、茶具、煎\n" +
                 "                            茶的追求达到一个极尽高雅、奢华的地步，他更倡导的是细煎慢品式的煎饮法。这种煮着方式和方法具有四个特点：\n" +
@@ -146,7 +146,7 @@ Vue.createApp({
                 "                            4.酌茶是在茶汤沸腾的时候进行的，茶滓随着沸水翻腾，舀入碗中的茶，有沫饽，有茶汤，有茶滓。\n" +
                 "                            唐代不只对饮茶方式作出了重大改变，更是全民饮茶。在这样一个诗的国度里，茶开始从引用层面上升到了精神层面。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"tangsong2.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/tangsong2.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            唐代的饮茶习俗蔚然成风，对茶和水的选择、烹煮方式以及饮茶环境越来越讲究。皇宫、寺院以及文人雅士之间盛行茶宴，茶宴的\n" +
                 "                            气氛庄重，环境雅致，礼节严格，且必用贡茶或高级茶叶，取水于名泉、清泉，选用名贵茶具。盛唐茶文化的形成，与当时佛教的\n" +
@@ -161,24 +161,24 @@ Vue.createApp({
                 "                            领域，由于茶业的南移，贡茶以建安北苑为最，茶学研究者倾向于研究建茶。在宋代茶叶著作中，著名的有叶清臣的《述煮茶小品》、\n" +
                 "                            蔡襄的《茶录》、朱子安的《东溪试茶录》、沈括的《本朝茶法》、赵佶的《大观茶论》等。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"tangsong4.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/tangsong4.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            宋代是历史上茶饮活动最活跃的时代，由于南北饮茶文化的融合，开始出现茶馆文化，茶馆在南宋时称为茶肆，当时临安城的茶饮\n" +
                 "                            买卖昼夜不绝。此外，宋代的茶饮活动从贡茶开始，又衍生出“绣茶”“斗茶”“分茶”等娱乐方式。如下为点茶的具体过程：\n" +
                 "                        </p>\n" +
-                "                        <img src=\"diancha1.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/diancha1.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            点茶先要用纸将茶饼包好捶碎，再用碾子磨成细末，然后用茶罗筛。茶膏\n" +
                 "                        </p>\n" +
-                "                        <img src=\"diancha2.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/diancha2.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            筛出来的茶末放进茶盅，加沸水少许调成茶膏。茶汤\n" +
                 "                        </p>\n" +
-                "                        <img src=\"diancha3.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/diancha3.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            茶膏调匀，再用沸水冲成茶汤。汤花\n" +
                 "                        </p>\n" +
-                "                        <img src=\"diancha4.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/diancha4.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            泡沫叫汤花，也叫云脚，要求鲜亮雪白，到达苏轼所称“汤发云腴酽白，盏浮花乳轻圆”的效果。\n" +
                 "\n" +
@@ -188,13 +188,13 @@ Vue.createApp({
                 "<h1>\n" +
                 "                            元朝曲折茶可饮，明清俗雅两分难\n" +
                 "                        </h1>\n" +
-                "                        <img src=\"yuanmingqing1.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/yuanmingqing1.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            13世纪初期，蒙古人的饮料以马奶酒和各种家畜的奶为主，随着蒙古疆域的不断扩张，蒙古人逐渐受到金朝饮茶风气的影响。元\n" +
                 "                            朝建立后，蒙古人将自身的族群风俗和饮食习惯带到中原，茶和茶具从宋人的崇金贵银、夸豪斗富进入到了返璞归真、删繁就简\n" +
                 "                            的境界。元代时期常用的茶具仅有执壶、高足杯、盏、盏托、碗、盖罐等，往日习见于宋、辽人茶室中的碾、罗、风炉等均不见踪影。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"yuanmingqing.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/yuanmingqing.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            元代时人们饮茶已逐渐减少了对香料的使用，取而代之的是更具有蒙古特色的酥油、炒米等，这种以酥油入茶的饮用方式也逐\n" +
                 "                            渐传播到汉族和其它民族，现在藏族同胞所喝的酥油茶便源于此。元代时朝廷贡茶虽仍以团饼为主，但饮用散茶和直接用沸水\n" +
@@ -206,7 +206,7 @@ Vue.createApp({
                 "                            袁桷（jué）诗中写道：“山后天寒不识花，家家高晒芍药芽。南客初来未谙俗，下马入门犹索茶”。描绘出了当时普通百姓家\n" +
                 "                            家制作花茶的画面，体现出花茶加工工艺在民间的广泛普及。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"yuanmingqing2.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/yuanmingqing2.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            赵孟頫名作《斗茶图》生动展现了元代斗茶的热络场面。四茶贩或注水冲点，或端杯观望，其旁挑担有圆有方，茶炉、汤瓶、\n" +
                 "                            茶壶、茶盏，各类茶具兼有。在几处元代墓葬壁画中，亦有表现备茶点茶之场景：山西省屯留县康庄村2号元墓壁画，绘一侍\n" +
@@ -215,7 +215,7 @@ Vue.createApp({
                 "                            视、不可或缺的生活片段，亦是墓主人品味、生活品质，乃至身份地位的象征。茶既是在世者的享受，亦承载着墓主人对身\n" +
                 "                            后生活的热盼。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"yuanmingqing3.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/yuanmingqing3.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            宋人让茶事成为一项兴旺的事业，但也让茶艺走向了繁复、琐碎、奢侈，失却了茶文化原本的朴实与清谈，过于精细的茶艺\n" +
                 "                            淹没了唐代茶文化的精神。自元代以后，茶文化进入了曲折发展期。直到明代中叶，汉人有感于前代民族兴亡，加之开国之\n" +
@@ -236,7 +236,7 @@ Vue.createApp({
                 "<h1>\n" +
                 "                            峥嵘岁月倏忽过，茶香依旧润今朝\n" +
                 "                        </h1>\n" +
-                "                        <img src=\"dangdai1.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/dangdai1.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            在近代，1846-1886年是中国茶叶的兴盛时期(茶园面积不断的扩大，茶叶产量迅速增递，有力的促进了对外贸易发展)。1886\n" +
                 "                            -1947年，是中国茶叶生产的衰落时期(政治、经济方面、国际茶叶市场竞争失败)。1950-1988年，是中国茶叶生产的恢复发展时期，\n" +
@@ -247,7 +247,7 @@ Vue.createApp({
                 "                            虽然中华茶文化古已有之，但是它们在当代的复兴，被研究却是始于二十世纪80年代。台湾是现代茶艺、茶道的最早复兴之地。\n" +
                 "                            内地方面，新中国成立后，我国茶叶产量发展很快。物质基础的丰富为茶文化的发展提供了坚实的基础。\n" +
                 "                        </p>\n" +
-                "                        <img src=\"dangdai2.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/dangdai2.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            茶文化对现代社会的作用主要有五个方面：\n" +
                 "                        </p>\n" +
@@ -272,7 +272,7 @@ Vue.createApp({
                 "                            5．促进开放，推进国际文化交流。国际茶文化的频繁交流，使茶文化跨越国界，广交天下成为人类文明的共同精神财富。\n" +
                 "\n" +
                 "                        </p>\n" +
-                "                        <img src=\"dangdai3.png\" alt=\"placeholder\" class=\"feature\">\n" +
+                "                        <img src=\"image/dangdai3.png\" alt=\"placeholder\" class=\"feature\">\n" +
                 "                        <p>\n" +
                 "                            茶道精神离不开茶人精神。所谓茶人精神是指茶人的形象或者说茶人应有的道德情操、风范、精神面貌。“茶人精神”\n" +
                 "                            是已故原上海市茶叶学会理事长钱梁教授在 80 年代初率先提出的。“默默地无私奉献，为人类造福”是“茶人精神”的朴素表达。\n" +
