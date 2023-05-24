@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../top.js" defer="defer"></script>
+</head>
+
+<body>
+    <div class="slideshow-container" id="slideshow-container_id">
+        <div class="mySlides fade" v-for="(item,index) in items">
+            <div class="toptitle">
+                <p class="first_p">{{item.first}}</p>
+                <p class="second_p">{{item.second}}</p>
+            </div>
+            <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
+        </div>
+    </div>
+    <div class="header">
+        <ul>
+            <li><a href="../Main_menu/main_menu.html"><strong>首页</strong></a></li>
+            <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
+            <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
+            <li><a href="#"><strong>茶道文化</strong></a></li>
+            <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
+        </ul>
+        <span></span>
+        <input type="search">
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
+    </div>
+    <div class="flex">
+        <div class="left_white">
+        </div>
+        <div class="grid">
+
+            <div class="introduce">
+                <img src="../image/introduction/introduction_photo.jpg">
+                <p>
+                    我们是一支由南开大学软件学院21级本科生组成的开发小队！这是我们的前端实训大作业！
+                </p>
+                <a href="https://github.com/Cu737/tea_website" target="_blank">
+                    <span>
+                        <img src="../image/introduction/github.png">
+                    </span>
+                    <p>github地址</p>
+                </a>
+            </div>
+            <div class="main">
+                <!-- 在此处开始写 注意盒子宽度设为800px margin-right: 30px--,main的属性我已经设置好>
+                <！-->
+                <div class=content>
+                    <article>
+                        <h1>远安黄茶</h1>
+                        <p>
+                            远安黄茶，湖北省远安县特产，全国农产品地理标志。远安黄茶生产地域地形地貌为山地、丘陵、河谷冲积平原兼而有之，土壤质地较好，砂粘合理，酸碱度适中。适合黄茶生长，外形条索环状，色泽金黄，汤色黄净明亮，香气神异且持久清香。
+                        </p>
+                        <h2>产品特点</h2>
+                        <p>
+                            远安黄茶属黄茶类，外形条索环状（俗称环子脚），白毫显露，色泽金黄（略带鱼子泡），汤色黄净明亮，香气神异且持久清香，嘬之生津，滋味醇厚甘凉绵长，叶底嫩黄匀整。远安黄茶内在品质典型特性突出，茶多酚≥15%、咖啡碱（以干基计）≥2.5%、游离氨基酸≥2%。
+                        </p>
+                        <h2>产地环境</h2>
+                        <p>
+                            远安黄茶生产地域地形地貌为山地、丘陵、河谷冲积平原兼而有之，西北部山地占总面积的 38.6%，东部丘陵占总面积的38%，中部河谷冲积平原占总面积的23 .4%。远安黄茶种植区域在海拔800米以下，区域内山亘连绵，云雾缭绕，溪流纵横交错，茶园错落其间，且远离城镇、村民生活区、工业园区及交通要道，隔离条件好，产地自然生态环境独特，无污染。
+                        </p>
+                        <h2>历史渊源</h2>
+                        <p>
+                            嫘祖故里湖北远安茶叶种植历史悠久，被誉为“陆羽《茶经》第一县”，是全国著名的黄茶产区。独特的丹霞地貌孕育出独赋异禀的远安黄茶。以鹿苑茶为代表的远安黄茶有近800年历史，以其幽兰之香、色美味醇等鲜明特征多次被评为“全国名茶”。
+                        </p>
+                        <p>
+                            1966年，远安黄茶采摘、制作、贮藏等工艺被安徽农学院编入全国高等农业院校试用教材《制茶学》一书，1985年再度入编《中国名茶研究选集》，致使悠久而丰厚底蕴的远安黄茶人文文化与自然文化得以传承和发扬。
+                        </p>
+                        <h2>生产情况</h2>
+                        <p>
+                            2012年，黄茶繁衍进入鼎盛，成为远安县的支柱产业之一。现茶园面积达28665亩，其中采摘面积20310亩，总产量1302吨，产值达到2.5亿元。
+                        </p>
+                        <h2>产品荣誉</h2>
+                        <p>
+                            2013年6月，远安黄茶系列产品之一的“南荆湾”-“南荆黄芽”和“南荆毛尖”等以其独特的远安黄茶品质展示于“中国三峡第三届茶文化艺术节”，赢得众多专家学者、客商和消费者的青睐；同年5月，荣获第六届“湖北企业社会责任最具创新力企业奖”。
+                        </p>
+                        <p>
+                            2017年9月1日，原中华人民共和国农业部批准对“远安黄茶”实施国家农产品地理标志登记保护。
+                        </p>
+                    </article>
+                </div>
+                <div class=endless>
+                    <h1>尾标签</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="right_white">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../top.js" defer="defer"></script>
+</head>
+
+<body>
+    <div class="slideshow-container" id="slideshow-container_id">
+        <div class="mySlides fade" v-for="(item,index) in items">
+            <div class="toptitle">
+                <p class="first_p">{{item.first}}</p>
+                <p class="second_p">{{item.second}}</p>
+            </div>
+            <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
+        </div>
+    </div>
+    <div class="header">
+        <ul>
+            <li><a href="../Main_menu/main_menu.html"><strong>首页</strong></a></li>
+            <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
+            <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
+            <li><a href="#"><strong>茶道文化</strong></a></li>
+            <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
+        </ul>
+        <span></span>
+        <input type="search">
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
+    </div>
+    <div class="flex">
+        <div class="left_white">
+        </div>
+        <div class="grid">
+
+            <div class="introduce">
+                <img src="../image/introduction/introduction_photo.jpg">
+                <p>
+                    我们是一支由南开大学软件学院21级本科生组成的开发小队！这是我们的前端实训大作业！
+                </p>
+                <a href="https://github.com/Cu737/tea_website" target="_blank">
+                    <span>
+                        <img src="../image/introduction/github.png">
+                    </span>
+                    <p>github地址</p>
+                </a>
+            </div>
+            <div class="main">
+                <!-- 在此处开始写 注意盒子宽度设为800px margin-right: 30px--,main的属性我已经设置好>
+                <！-->
+                <div class=content>
+                    <article>
+                        <h1>金盏花茶</h1>
+                        <p>
+                            金盏花茶，橙黄色花朵犹如太阳的金盏花（Calendula officinalis），又名常春花，原产于南欧、地中海沿岸一带。据说古罗马人看见金盏花在初一开花，于是依“Calends”（罗马古历初一）为它命名，这就是其属名的由来。至于英文名“Pot Marigold”，相传于圣母玛丽亚有关，由于圣母是童贞女，因此藉金盏花解经痛及调经的功能庇助少女们。
+                        </p>
+                        <p>
+                            古埃及人认为金盏花能延缓衰老，印度人则尊奉它为神圣的花。中世纪时人们已将金盏花用于疗伤，更藉以对抗瘟疫和黑死病。再在法国诺曼底地区，则以金盏花为牛没添染金黄色泽。相传它还有预测天气的功能：如果花在早晨7点以前绽放，当日必定是晴天，反之就将要下雨了。
+                        </p>
+                        <h2>制作方法</h2>
+                        <p>
+                            可以根据其原料的不同而制作不同的金盏花茶，具体制作方法如下：
+                        </p>
+                        <p>
+                            金盏花阳光茶
+                        </p>
+                        <p>
+                            金盏花的花型有如小太阳一般，而黄色的茶汤又像亮橙橙的阳光般温暖，马鞭草帮你提神扫除睡意，玫瑰果提供一天所需要的维生素C，使人精力充沛。
+                        </p>
+                        <p>
+                            材料：
+                        </p>
+                        <p>
+                            干燥金盏花1大匙 干燥马鞭草1小匙 玫瑰果1小匙 热开水500毫升
+                        </p>
+                        <p>
+                            过程
+                        </p>
+                        <p>
+                            干燥金盏花用热开水冲泡一下，浸泡约30秒取出
+                        </p>
+                        <p>
+                            将金盏花与马鞭草和玫瑰果一起放入壶中，冲入500毫升热开水，浸泡3分钟即可
+                        </p>
+                        <p>
+                            金盏花消暑茶
+                        </p>
+                        <p>
+                            金盏花茶除了可以消热解暑之外，还有养肝明目、消炎养颜的功效，夏季饮用不仅清凉去热还能喝出好皮肤。如果不习惯花朵本身的味道，可依个人口味加入进行调味。
+                        </p>
+                        <p>
+                            材料
+                        </p>
+                        <p>
+                            干燥金盏花3～5克 绿茶1茶匙 热开水适量
+                        </p>
+                        <p>
+                            过程
+                        </p>
+                        <p>
+                            将干燥金盏花用热开水冲一下，浸泡30秒后洗净
+                        </p>
+                        <p>
+                            将金盏花与绿茶一起放入壶中，加入热开水浸泡约3分钟即可饮用
+                        </p>
+                        <p>
+                            金盏花薄荷茶
+                        </p>
+                        <p>
+                            薄荷与金盏花搭配，能提神下火，稳定情绪，最适合熬夜后的早上饮用。如果手边没有新鲜薄荷，可以用干燥薄荷1小匙代替。
+                        </p>
+                        <p>
+                            材料
+                        </p>
+                        <p>
+                            干燥金盏花1匙 新鲜薄荷5枝 热开水500毫升
+                        </p>
+                        <p>
+                            过程
+                        </p>
+                        <p>
+                            将干燥金盏花用热水冲一下，再浸泡30秒后洗净
+                        </p>
+                        <p>
+                            将金盏花和薄荷一起放入壶中，加入500毫升热开水，浸泡30秒即可
+                        </p>
+                        <h2>选购方法</h2>
+                        <p>
+                            颜色太鲜艳、太漂亮的金盏花茶不能选，可能是硫磺熏的，这种金盏菊用滚水冲泡后，有硫磺味。要选有花萼，花萼偏绿色的新鲜菊花。
+                        </p>
+                        <p>
+                            颜色发暗的金盏菊也不要选，这种金盏菊是陈年老菊花，且受潮了，可能还长了霉，这样的菊花吃了对身体有害。
+                        </p>
+                        <p>
+                            用手摸一摸，松软的，顺滑的金盏菊比较好；花瓣不零乱，不脱落，即表明是刚开的就采摘了。
+                        </p>
+                        <p>
+                            菜市场上的金盏菊质量没有保证，大医院或大药店的金盏菊有独立包装，有药师把关，相对来说，质量有保障。
+                        </p>
+                    </article>
+                </div>
+                <div class=endless>
+                    <h1>尾标签</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="right_white">
+    </div>
+</body>
+
+</html>
