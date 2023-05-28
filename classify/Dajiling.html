@@ -8,27 +8,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="../style.css">
-
-    <script src="top.js" defer="defer"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../top.js" defer="defer"></script>
 </head>
 
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <!-- <div class="numbertext">1 / 3</div> -->
-            <img decoding="async" src="../image/tea.jpg" style="width:100%" style="height: 100%;">
+    <div class="slideshow-container" id="slideshow-container_id">
+        <div class="mySlides fade" v-for="(item,index) in items">
+            <div class="toptitle">
+                <p class="first_p">{{item.first}}</p>
+                <p class="second_p">{{item.second}}</p>
+            </div>
+            <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
         </div>
     </div>
     <div class="header">
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">茶道历史</a></li>
-            <li><a href="#">茶道器具</a></li>
-            <li><a href="#">茶道文化</a></li>
-            <li><a href="#">购茶途径</a></li>
+            <li><a href="../Main_menu/main_menu.html"><strong>首页</strong></a></li>
+            <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
+            <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
+            <li><a href="#"><strong>茶道文化</strong></a></li>
+            <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
         </ul>
         <span></span>
         <input type="search">
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
     </div>
     <div class="flex">
         <div class="left_white">
@@ -116,17 +134,22 @@
                             大吉岭的红茶的品种是来自中国的茶树品种，当初在印度其他地区试种中国茶全部以失败告终时，只有种植在大吉岭的中国红茶幸存下来，并因其独特的地理位置和气候的关系，形成了独具一格的口味。大吉岭的最佳采摘季严格地分为春、夏、秋三季，各个时期所采摘的红茶的味道和香气也大为不同。
                         </p>
                         <p>
-                            春茶，在3-4月采摘，也被称为“First Flush”，即春摘，是一年当中最早的一次采摘，初茶嫩芽居多，比起其他时节的大吉领红茶来，经过春日温柔蕴藉的云雾洗礼，滋味往往分外轻扬甜润，洋溢著清新的花香，汤色呈金黄色，绝对是不可多得的难忘体验！
+                            春茶，在3-4月采摘，也被称为“First
+                            Flush”，即春摘，是一年当中最早的一次采摘，初茶嫩芽居多，比起其他时节的大吉领红茶来，经过春日温柔蕴藉的云雾洗礼，滋味往往分外轻扬甜润，洋溢著清新的花香，汤色呈金黄色，绝对是不可多得的难忘体验！
                         </p>
                         <p>
-                            夏摘茶，在5-6月采摘，被称为“Second Flush”，即次摘，一年当中的第二次采摘，亚洲季风吹拂下，香气与滋味既织细精雅、却也同时丰硕饱满有个性，增加了圆熟醇香之感；汤色呈橘黄色，明亮。故而在各季节大吉领红茶中，向来评价最高、也最受茶饕们的肯定与喜爱。
+                            夏摘茶，在5-6月采摘，被称为“Second
+                            Flush”，即次摘，一年当中的第二次采摘，亚洲季风吹拂下，香气与滋味既织细精雅、却也同时丰硕饱满有个性，增加了圆熟醇香之感；汤色呈橘黄色，明亮。故而在各季节大吉领红茶中，向来评价最高、也最受茶饕们的肯定与喜爱。
                         </p>
                         <img src="image/dajiling6.jpg" />
                         <p>
-                            秋摘茶，在7-8月采摘，这个时期采摘的红茶被称为“Autumnal”，而除了素负盛名的夏摘与春摘茶之外，秋摘的大吉领茶也极富特色。 需得等到当地雨季过后的九到十月间才能采收制茶的大吉领，茶色较深、滋味札实浓厚，价格也相对较平易；故而不仅可以轻松领略大吉领的另种风情，也是三种季节里最适合用来冲制奶茶的茶款。
+                            秋摘茶，在7-8月采摘，这个时期采摘的红茶被称为“Autumnal”，而除了素负盛名的夏摘与春摘茶之外，秋摘的大吉领茶也极富特色。
+                            需得等到当地雨季过后的九到十月间才能采收制茶的大吉领，茶色较深、滋味札实浓厚，价格也相对较平易；故而不仅可以轻松领略大吉领的另种风情，也是三种季节里最适合用来冲制奶茶的茶款。
                         </p>
                         <p>
-                            大吉岭有87个茶叶庄园，茶叶庄园漫布青藏高原南部山麓的不同海拔高度的溪谷里。正是由于大吉岭茶园之间的海拔高度的差异，不同庄园茶叶的品质区别很大。知名的茶叶庄园有：Castleton（卡斯尔顿），Jungpana（蔷帕拉），Gopaldhara（高帕德哈拉），Goomtee（洭缇），Risheethat（里斯希赫特），Rohini（罗西尼），Thurbo（瑟波），Okayti（欧凯蒂），Phuguri（芙古丽），Margaret's Hope（玛格丽特的希望），Sungma（桑格玛），Gielle（吉尔），Selibong（瑟利朋），Kalejvallery（卡乐奇山谷），Giddapahar（吉达帕赫），Seeyork（希约克），Monteviot（蒙特沃特），Phoobseling（芙布瑟灵），Chamong（查蒙），Linga（灵芽），Upper Fagu（阿泊尔法古），Glenburn（格里恩伯恩），Highland Star（高原星）。
+                            大吉岭有87个茶叶庄园，茶叶庄园漫布青藏高原南部山麓的不同海拔高度的溪谷里。正是由于大吉岭茶园之间的海拔高度的差异，不同庄园茶叶的品质区别很大。知名的茶叶庄园有：Castleton（卡斯尔顿），Jungpana（蔷帕拉），Gopaldhara（高帕德哈拉），Goomtee（洭缇），Risheethat（里斯希赫特），Rohini（罗西尼），Thurbo（瑟波），Okayti（欧凯蒂），Phuguri（芙古丽），Margaret's
+                            Hope（玛格丽特的希望），Sungma（桑格玛），Gielle（吉尔），Selibong（瑟利朋），Kalejvallery（卡乐奇山谷），Giddapahar（吉达帕赫），Seeyork（希约克），Monteviot（蒙特沃特），Phoobseling（芙布瑟灵），Chamong（查蒙），Linga（灵芽），Upper
+                            Fagu（阿泊尔法古），Glenburn（格里恩伯恩），Highland Star（高原星）。
                         </p>
                     </article>
                 </div>
