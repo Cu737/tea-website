@@ -15,28 +15,14 @@
 
 <body>
 
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="toptitle">
-      <p class="first_p">一帘春欲暮</p>
-      <p class="second_p">茶烟细杨落花风</p>
+  <div class="slideshow-container" id ="slideshow-container_id">
+    <div class="mySlides fade"  v-for="(item,index) in items" >
+        <div class="toptitle">
+            <p class="first_p">{{item.first}}</p>
+            <p class="second_p">{{item.second}}</p>
+        </div>
+        <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
     </div>
-    <img decoding="async" src="../image/tea1.jpg" style="width:100%" style="height: 100%;">
-  </div>
-  <div class="mySlides fade">
-    <div class="toptitle">
-      <p class="first_p">青箬小壶冰共裹</p>
-      <p class="second_p">寒灯新茗月同煎</p>
-    </div>
-    <img decoding="async" src="../image/tea5.jpg" style="width:100%" style="height: 100%;">
-  </div>
-  <div class="mySlides fade">
-    <div class="toptitle">
-      <p class="first_p">当年曾胜赏</p>
-      <p class="second_p">生香熏袖，活火分茶</p>
-    </div>
-    <img decoding="async" src="../image/tea7.jpg" style="width:100%" style="height: 100%;">
-  </div>
 </div>
 <div id="waves">
   <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -55,9 +41,8 @@
 <div class="header">
   <ul>
     <li><a href="../Main_menu/main_menu.html"><strong>首页</strong></a></li>
-    <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
-    <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
-    <li><a href="#"><strong>茶道文化</strong></a></li>
+    <li><a href="../Solution1/history.html"><strong>茶道历史</strong></a></li>
+    <li><a href="../classify/oolong.html"><strong>茶道分类</strong></a></li>
     <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
   </ul>
   <span></span>
