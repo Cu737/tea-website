@@ -8,27 +8,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="../style.css">
-
-    <script src="top.js" defer="defer"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../top.js" defer="defer"></script>
 </head>
 
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <!-- <div class="numbertext">1 / 3</div> -->
-            <img decoding="async" src="../image/tea.jpg" style="width:100%" style="height: 100%;">
+    <div class="slideshow-container" id="slideshow-container_id">
+        <div class="mySlides fade" v-for="(item,index) in items">
+            <div class="toptitle">
+                <p class="first_p">{{item.first}}</p>
+                <p class="second_p">{{item.second}}</p>
+            </div>
+            <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
         </div>
     </div>
     <div class="header">
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">茶道历史</a></li>
-            <li><a href="#">茶道器具</a></li>
-            <li><a href="#">茶道文化</a></li>
-            <li><a href="#">购茶途径</a></li>
+            <li><a href="../Main_menu/main_menu.html"><strong>首页</strong></a></li>
+            <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
+            <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
+            <li><a href="#"><strong>茶道文化</strong></a></li>
+            <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
         </ul>
         <span></span>
         <input type="search">
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
     </div>
     <div class="flex">
         <div class="left_white">
@@ -59,6 +77,7 @@
                         <p>
                             关于紧压茶的辨别，首要看以下方面：外形要求外形匀整正直；棱角统一，不缺边少角；厚薄一致，松紧适度；模纹明晰，条索划一紧结；色彩以黑褐，棕褐、褐赤色为正常。外表有霉花，霉点的普洱茶均为劣质。
                         </p>
+                        <img src="image/puersan1.jpg" />
                         <h2>简介</h2>
                         <p>
                             权衡嫩度看3点：
@@ -69,6 +88,7 @@
                         <p>
                             2、条索（叶片卷紧的水平）紧结，重实，嫩度高。
                         </p>
+                        <img src="image/puersan2.jpg" />
                         <p>
                             3、光彩光润,光彩润滑，滋润的嫩度好，光彩干燥的嫩度差。
                         </p>
@@ -79,6 +99,7 @@
                         <p>
                             再说说普洱茶的外形，这里的外形说的是紧压茶的外形。普通紧压茶分为饼茶、沱茶、方茶、砖茶等几种。当前很多人都感觉饼茶比较好，这也是个误区。依照以前的说法，一二级作散茶，三四级作沱茶，七八级作饼茶，九十级作砖茶，然则普洱茶，其外形与其质量早就无关了，砖、饼、沱、散茶等都有原料凹凸之分。
                         </p>
+                        <img src="image/puersan3.jpg" />
                         <h2>鉴赏</h2>
                         <p>
                             看外观
@@ -98,6 +119,7 @@
                         <p>
                             主要采取热嗅和冷嗅，热嗅看香气的纯异，冷嗅看香气的持久性；优质的热嗅陈香显著浓郁，且纯正，气感较强，冷嗅陈香悠长，是一种甘爽的味道。质次的则有陈香，但夹杂酸、馊味、铁锈水味或其它杂味，也有的是臭霉味。
                         </p>
+                        <img src="image/puersan4.jpg" />
                         <p>
                             品滋味
                         </p>
