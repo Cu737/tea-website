@@ -33,7 +33,7 @@
             <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
         </ul>
         <span></span>
-        <input type="search">
+        <input type="search" value="请输入文字">
     </div>
     <div id="waves">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -51,7 +51,9 @@
     </div>
     <div class="flex">
         <div class="left_white">
-            <div class="floatTea">浮动茶叶</div>
+            <div class="floatTea">
+                <img src="../image/take3.png">
+            </div>
         </div>
         <div class="grid">
             <div class="introduce">
@@ -73,7 +75,7 @@
                         <img class="facade" :src="item.src_img">
                         <img class="obverse" :src="item.src_img">
                         <!-- <a href="#" v-show="judge_switch[index]" v-for="item in word_item">{{item.content}}</a> -->
-                        <a href="#" v-for="(word_item,tea_index) in word_items[index].tea_content" v-show="!judge_switch[index]" style="float:left; width:100px; height:50px; margin-top:30px; font-size: 30px; z-index:5; position:relative">{{word_items[index].tea_content[tea_index]}}</a>
+                        <a :href="word_items[index].href[tea_index]" v-for="(word_item,tea_index) in word_items[index].tea_content" v-show="!judge_switch[index]"  style="float:left; width:110px; height:50px; margin-top:30px; font-size: 28px; z-index:5; position:relative">{{word_items[index].tea_content[tea_index]}}</a>
                         <p v-show="judge_switch[index]">{{item.img_text}}</p>
                     </li>
                     <li>
@@ -132,7 +134,9 @@
         </div>
 
         <div class="right_white">
-            <div class="floatTea">浮动茶叶</div>
+            <div class="floatTea">
+                <img src="../image/take3.png">
+            </div>
         </div>
     </div>
 

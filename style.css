@@ -539,12 +539,15 @@ svg:not(:root) {
 
 .floatTea{
     position: absolute;
-    width: 100%;
+    width: 150px;
     top: 0px;
-    height: 200px;
-    background-color: #344e41;
+    height: 150px;
+    background-color: transparent;
 }
-
+.floatTea img{
+    width:150px;
+    height:150px;
+}
 .right_white {
     position: relative;
     width: 181.2px;

@@ -8,15 +8,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="../style.css">
-
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="../top.js" defer="defer"></script>
 </head>
 
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <!-- <div class="numbertext">1 / 3</div> -->
-            <img decoding="async" src="../image/tea.jpg" style="width:100%" style="height: 100%;">
+    <div class="slideshow-container" id="slideshow-container_id">
+        <div class="mySlides fade" v-for="(item,index) in items">
+            <div class="toptitle">
+                <p class="first_p">{{item.first}}</p>
+                <p class="second_p">{{item.second}}</p>
+            </div>
+            <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
         </div>
     </div>
     <div class="header">
@@ -29,6 +33,20 @@
         </ul>
         <span></span>
         <input type="search">
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
     </div>
     <div class="flex">
         <div class="left_white">
