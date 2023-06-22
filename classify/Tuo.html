@@ -8,27 +8,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="../style.css">
-
-    <script src="top.js" defer="defer"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../top.js" defer="defer"></script>
 </head>
 
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <!-- <div class="numbertext">1 / 3</div> -->
-            <img decoding="async" src="../image/tea.jpg" style="width:100%" style="height: 100%;">
+    <div class="slideshow-container" id="slideshow-container_id">
+        <div class="mySlides fade" v-for="(item,index) in items">
+            <div class="toptitle">
+                <p class="first_p">{{item.first}}</p>
+                <p class="second_p">{{item.second}}</p>
+            </div>
+            <img decoding="async" v-bind:src="src_item[index]" style="width:100%; height: 100%;">
         </div>
     </div>
     <div class="header">
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">茶道历史</a></li>
-            <li><a href="#">茶道器具</a></li>
-            <li><a href="#">茶道文化</a></li>
-            <li><a href="#">购茶途径</a></li>
+            <li><a href="../Main_menu/main_menu.html"><strong>首页</strong></a></li>
+            <li><a href="../Solution1/shennong.html"><strong>茶道历史</strong></a></li>
+            <li><a href="oolong.html"><strong>茶道分类</strong></a></li>
+            <li><a href="../commodity/commodity_one.html"><strong>购茶途径</strong></a></li>
         </ul>
         <span></span>
         <input type="search">
+    </div>
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
     </div>
     <div class="flex">
         <div class="left_white">
@@ -60,6 +77,7 @@
                         <p>
                             普洱沱茶从面上看似圆面包，从底下看似厚壁碗， 中间下凹，颇具特色。沱茶的种类，依原料不同的绿茶沱茶和黑茶沱茶之分。绿茶沱茶是以较细嫩的晒青绿毛茶为原料，经蒸压而制成;黑茶沱茶是以普洱茶为原料，经蒸压而制成。
                         </p>
+                        <img src="image/puertuo1.jpg" />
                         <p>
                             普洱茶外形条索肥、匀实，色泽乌润，白毫密布。茶的品种较多。据清代阮福的《普洱茶说》记载：“普洱茶”二月采蕊极细而白，谓之毛尖，以作贡茶;采而蒸之，揉为茶饼，其 叶少放而犹 嫩者，名芽茶;采于三、四月者，名小满茶;采于六、七月者，名谷花茶;大而圆者，名紧团茶;小而圆者，名女儿茶。
                         </p>
@@ -71,6 +89,7 @@
                         <p>
                             关于沱茶名称的由来，传闻很多，有人说因其成品形状如团，团由沱转化而来，故得名“沱”，亦有人说过去云南沱茶主要销往四川沱江一带而得名“沱茶”。其外形与普通茶不同，颇具特色，从上面看类似圆面包，从底下看却又类似厚壁碗，中间下凹，每个净重约100克、250克等不等。通常在包装时，每五个用竹箬包成一包，以树皮绳或竹篾捆绑，结实牢靠，很有意思。据说，制作于此同样是为了方便古时长途运输及其长期存储。
                         </p>
+                        <img src="image/puertuo2.jpg" />
                         <h2>分类</h2>
                         <p>
                             历史上云南的沱茶主要分为两类:一类是用晒青毛茶直接蒸压的生沱，具有色泽乌润、汤色清澈、馥郁清香、醇爽回甘的特点，主要销往国内各地。另一类是采用人工渥堆发酵后的普洱散茶做原料，制成的熟沱，其色泽褐红，汤色红亮，性温味甘，滋味醇厚，主要供应出口，远销至西欧、北美以及亚洲各地。两类沱茶的共同特点是:外形紧结端正，冲泡后色、香、味俱佳，且能持久，耐人寻味。
@@ -78,6 +97,7 @@
                         <p>
                             沱茶以下关茶厂出品的最为有名。下关茶厂加工生产的沱茶，以思茅普洱茶区的大叶种晒青毛茶精制而成，原料精细，芽毫显露，外形圆整，褐润洁净，包装古朴精美，特色浓郁。上等的沱茶，均选用二三月份茶树上刚发出的嫩梢作为原料，芽叶细嫩、肥硕，茸毛披附，制成的成品似有银色白纱附面，十分美观。冲泡后，滋味浓酽、香醇，耐冲泡，愈久愈醇，乃茶中的佼佼者，如现在许多茶人争先收购的早期临沧茶厂生产的“银毫沱茶”和下关茶厂在改制前所加工的一系列沱茶等，都具有收藏和鉴赏的价值。
                         </p>
+                        <img src="image/puertuo3.jpg" />
                         <p>
                             其次，在普洱茶的几大形态中(砖、沱、饼、散)，沱茶属其中最畅销海外市场者，历来都颇受国外消费者的欢迎和认可。究其原因，除外形较另类外，主要还是与普洱茶的功效密不可分。
                         </p>
@@ -88,6 +108,7 @@
                         <p>
                             保持适当的温湿度，对普洱茶的“陈化”是很有必要的。众所周知，微生物的繁育需要在一定的温、湿度条件下才能快速进行。普洱茶“陈化”过程，其实是一个“氧化”的过程。茶叶多酚氧化酶的活性在20~40℃的范围内，随温度升高而增强，超过此温度，酶活性反而随温度升高而减弱。微生物的活性也有随温湿度升高而加剧的特点，但温度过高，会导致酶活性钝化；湿度过大，茶叶容易发霉而影响饮用价值。最好能将普洱茶含水量控制在8%~10%、储藏温度控制在20~25℃之间。
                         </p>
+                        <img src="image/puertuo4.jpg" />
                         <p>
                             一般家庭来说，最好将普洱茶存放在临窗的阳台附近，早晚开窗，保持空气清新和对流，这有利于茶叶与空气中的氧气结合，发生非酶促自动氧化而加速“陈化”。“透光”保存，是指在“自然光”下保存普洱茶。不能将茶叶直接暴露在阳光下，也应尽量避免“黑暗”的环境。光线能使叶绿素发生光敏氧化降解，使茶叶色泽显著褐变。光线和风的作用，使茶叶陈化加速，逐渐形成普洱茶“汤色红浓、滋味甘醇、越陈越香”的品质特点。
                         </p>
@@ -97,7 +118,13 @@
                     </article>
                 </div>
                 <div class=endless>
-                    <h1>尾标签</h1>
+                    <ul>
+                        联系我们
+                        <li style="padding-top: 10px">林铎鸣：2114010@mail.nankai.edu.cn</li>
+                        <li>孙雨昕：2111498@mail.nankai.edu.cn</li>
+                        <li>刘昌翰：2594651085@qq.com</li>
+                        <li>卞一童：cucucu737@163.com</li>
+                        </ul>
                 </div>
             </div>
 

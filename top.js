@@ -10,11 +10,11 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // 切换时间为 2 秒
+    setTimeout(showSlides, 3000);
 }
 function scroll() {
-    var top = $("body").offset().top;//获取导航栏变色的位置距顶部的高度
-    var scrollTop = $(window).scrollTop();//获取当前窗口距顶部的高度
+    var top = $("body").offset().top;
+    var scrollTop = $(window).scrollTop();
     if (scrollTop <= top + 500) {
         $('.header').css('background-color', 'transparent');
     } else {
@@ -67,3 +67,15 @@ Vue.createApp({
     
 }
 ).mount('#slideshow-container_id')
+var input=document.getElementById('find');
+input.onfocus=function(){
+   if(this.value==" 请输入搜索内容")
+   this.value="";
+   this.style.color="black";
+}
+input.onblur=function(){  
+   if(this.value==""){
+   this.value=" 请输入搜索内容";
+   this.style.color="#999"
+   }
+}
