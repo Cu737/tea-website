@@ -21,6 +21,7 @@ small {
 }
 .header1 {
 	width: 100%;
+	font-size: 40px;
 }
 .collapse .item::before {
 	content: "";
@@ -69,4 +70,7 @@ small {
 	display: inline;
 	color: #52796f;
 	font-family: 华文楷体;
+}
+.collapse .item.normal a{
+	float:left;
 }
